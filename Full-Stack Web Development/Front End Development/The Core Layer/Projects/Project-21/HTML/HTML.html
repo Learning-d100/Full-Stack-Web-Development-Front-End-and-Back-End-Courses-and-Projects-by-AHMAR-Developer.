@@ -1,0 +1,133 @@
+<!--
+        Projects-21:-
+                    Job Application Form
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="../JAVASCRIPT/JAVASCRIPT.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../CSS/CSS.css"> 
+        <title>
+            Job Application Form
+        </title>    
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <!--Project-Heading-->
+            <p>Projects-<u>21</u> by <u>Ahmar</u> Developer.</p>
+        </header>
+        <!--Container-->
+        <div class="container">
+            <!--apply-box-->
+            <div class="apply_box">
+                <!--Heading-->
+                <h1>
+                    Job Application
+                    <span class="title_small">(Web)</span>
+                </h1>
+                <!--Form-->
+                <form action="">
+                    <!--Form-Container-->
+                    <div class="form_container">
+                        <!--First name-->
+                        <div class="form_control">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="Enter First Name...">
+                        </div>
+                        <!--Last name-->
+                        <div class="form_control">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Enter Last Name...">
+                        </div>
+                        <!--Email-->
+                        <div class="form_control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email...">
+                        </div>
+                        <!--Job-Role-->
+                        <div class="form_control">
+                            <label for="job_role">Job Role</label>
+                            <!--Select Job Role-->
+                            <select name="job_role" id="job_role">
+                                <!--5-Options-->
+                                <option value="">Select Job Role</option>
+                                <option value="frontend">Frontend Developer</option>
+                                <option value="backend">Backend Developer</option>
+                                <option value="full_stack">Full Stack Developer</option>
+                                <option value="ui_ux">UI UX Designer</option>
+                            </select>
+                        </div>
+                        <!--Textarea-->
+                        <div class="textarea_control">
+                            <label for="address">Address</label>
+                            <textarea name="address" id="address" rows="4" cols="50" placeholder="Enter Address..."></textarea>
+                        </div>
+                        <!--City-->
+                        <div class="form_control">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" placeholder="Enter City Name...">
+                        </div>
+                        <!--Pincode-->
+                        <div class="form_control">
+                            <label for="pincode">Pincode</label>
+                            <input type="number" name="pincode" id="pincode" placeholder="Enter Pincode Name...">
+                        </div>
+                        <!--Date-->
+                        <div class="from_control">
+                            <label for="date">Date</label>
+                            <input type="date" name="date" id="date" value="2026-06-08">
+                        </div>
+                        <!--Upload CV-->
+                        <div class="form_control">
+                            <label for="upload">Upload Your CV</label>
+                            <input type="file" id="uplaod" name="upload">
+                        </div>
+                    </div>
+                    <!--Button-->
+                    <div class="button_container">
+                        <button type="submit">Apply Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer>
+            <!--Copyright-->
+            <p>Copyright &copy; 2024, All Rights Reserved.</p>
+            <!--Developer-->
+            <p>Made by <u>Ahmar</u> Developer</p>
+            <!--Icons-->
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fas fa-home"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+            <!--Email-->
+            <p class="email-id">Email-<u>zS2m6@example.com</u></p>
+        </footer>
+    </body>
+</html>
