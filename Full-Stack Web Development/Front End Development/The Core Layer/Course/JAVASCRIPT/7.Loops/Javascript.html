@@ -1,0 +1,131 @@
+<!--
+        Javascript Course:-
+                7.Loops
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="Javascript.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Loops
+        </title> 
+        <!--Internal-CSS-->   
+        <style>
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: red; text-shadow: 0px 4px 16px black; text-align: center; border: none; border-radius: 10px; box-sizing: border-box; box-shadow: 0px 8px 16px black;">Javascript Course</h1>
+        <h1 style="text-align: center; border: none; border-radius: 10px; box-sizing: border-box; box-shadow: 0px 8px 16px black; margin-left: 250px; margin-right: 250px;">7.Loops</h1>
+        <p style="font-size: 20px;">(Loops are handy, if you want to run the same code over and over again, each time with a different value.)</p>
+        <!--Loops-->
+        <h3 style="place-items: center;">
+            <ul>
+                <li>For Loop</li>
+                <li>While Loop</li>
+                <li>Do While Loop</li>
+            </ul>
+        </h3>
+        <!--For Loop-->
+        <h2>1.For Loop</h2>
+        <p style="font-size: 20px;">(The for statement creates a loop with 3 optional expressions:)</p>
+        <p style="font-size: 20px;">
+            < p id="forLoop" >< / p ><br>
+            let text = "";<br>
+            for (let i = 0; i , 5; i++){<br>
+                text += "The number is " + i + "< br >";<br>
+            }<br>
+            document.getElementById("forLoop").innerHTML = text;
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="forLoop"></p>
+        <!---2.While Loop-->
+        <h2>2.While Loop</h2>
+        <p style="font-size: 20px;">(The while loop loops through a block of code as long as a specified condition is true.)</p>
+        <p style="font-size: 20px;">
+            < p id="whileLoop">< / p ><br>
+            let text1 = "";<br>
+            let i = 0;<br>
+            while (i < 10){<br>
+                text += "The number is " + i + "< br >";<br>
+                i++;<br>
+            }<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="whileLoop"></p>
+        <!--3.Do while loop-->
+        <h2>3.Do while loop</h2>
+        <p style="font-size: 20px;">(The do while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.)</p>
+        <p style="font-size: 20px;">
+            < p id="doWhileLoop"></ p ><br>
+            let text = ""<br>
+            let i = 0;<br>
+            do {<br>
+                text += "< br > The number is " + i;<br>
+                i++;<br>
+            }<br>
+            while (i < 10);<br>
+            document.getElementById("doWhileLoop").innerHTML = text;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="doWhileLoop"></p>
+        <!--Internal-javascript-->
+        <script defer>
+            // for loop
+            let text = "";
+            let a;
+            for (a = 1; a < 10; a++) {
+                text += "The number is " + a + "<br>";
+            }
+            //execute for loop
+            document.getElementById("forLoop").innerHTML = text;
+            // 2. while loop
+            let text1 = "";
+            let b = 0;
+            while (b < 10) {
+                text1 += "The number is " + b + "<br>";
+                b++;
+            }
+            // execute while loop
+            document.getElementById("whileLoop").innerHTML = text1;
+            // do while loop
+            let text2 = "";
+            let i = 0;
+            do {
+                text2 += "<br>The number is " + i;
+                i++;
+            }
+            while (i < 10);
+            // execute
+            document.getElementById("doWhileLoop").innerHTML = text2;
+        </script>
+    </body>
+</html>

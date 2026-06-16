@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. String
+        let name = "John Doe";
+        console.log(name); // Output: John Doe
+
+        // 2. Number
+        let age = 30;
+        console.log(age); // Output: 30
+
+        // 3. Boolean
+        let isStudent = true;
+        console.log(isStudent); // Output: true
+
+        // 4. Null
+        let emptyValue = null;
+        console.log(emptyValue); // Output: null
+
+        // 5. Undefined
+        let undefinedValue;
+        console.log(undefinedValue); // Output: undefined
+
+        // 6. Symbol
+        let uniqueId = Symbol('id');
+        console.log(uniqueId); // Output: Symbol(id)
+        // 7. Object
+        let person = {
+            name: "Alice",
+            age: 25,
+            isStudent: false
+        };
+        console.log(person); // Output: { name: "Alice", age: 25, isStudent: false }
+        // 8. BigInt
+        let bigNumber = BigInt(123456789012345678901234567890);
+        console.log(bigNumber); // Output: 123456789012345678901234567890n
+        // 9. Symbol
+        let sym1 = Symbol('foo');                   
+        let sym2 = Symbol('foo');
+        console.log(sym1 === sym2); // Output: false
+        // 10. Object (including arrays and functions)
+        let arr = [1, 2, 3];
+        console.log(arr); // Output: [1, 2, 3]
+        // Function
+        function greet() {
+            return "Hello!";
+        }
+        console.log(greet()); // Output: Hello!
+        // 11. Undefined (when a variable is declared but not assigned a value)
+        let uninitializedVariable;
+        console.log(uninitializedVariable); // Output: undefined
+        // 12. Null (explicitly assigned to indicate no value)
+        let nullValue = null;   
+        console.log(nullValue); // Output: null
+        // 13. Symbol (used for unique identifiers)
+        let uniqueSymbol = Symbol('unique');
+        console.log(uniqueSymbol); // Output: Symbol(unique)
+        // 14. BigInt (for large integers)
+        let largeInteger = BigInt("9007199254740991");
+        console.log(largeInteger); // Output: 9007199254740991n
+        // 15. Object (including arrays, functions, and other objects)
+        let complexObject = {
+            name: "Complex Object",
+            details: {
+                age: 40,
+                isActive: true
+            },
+            greet: function() {
+                return "Hello from complex object!";
+            }
+        };
+        console.log(complexObject); // Output: { name: "Complex Object", details: { age: 40, isActive: true }, greet: [Function: greet] }
+        // 16. Symbol (used for unique property keys)
+        let uniqueKey = Symbol('uniqueKey');
+        console.log(uniqueKey); // Output: Symbol(uniqueKey)
+        // 17. BigInt (for very large integers)
+        let veryLargeInteger = BigInt("1234567890123456789012345678901234567890");
+        console.log(veryLargeInteger); // Output: 1234567890123456789012345678901234567890n
+        // 18. Object (including arrays, functions, and other objects)
+        let anotherComplexObject = {
+            name: "Another Complex Object",
+            details: {
+                age: 50,
+                isActive: false
+            },
+            greet: function() {
+                return "Hello from another complex object!";
+            }
+        };
+        console.log(anotherComplexObject); // Output: { name: "Another Complex Object", details: { age: 50, isActive: false }, greet: [Function: greet] }
+        // 19. Symbol (used for unique property keys)
+        let anotherUniqueKey = Symbol('anotherUniqueKey');
+        console.log(anotherUniqueKey); // Output: Symbol(anotherUniqueKey)  // 20. BigInt (for very large integers)
+        let extremelyLargeInteger = BigInt("123456789012345678901234567890      12345678901234567890");
+        console.log(extremelyLargeInteger); // Output: 12345678901234567890123456789012345678901234567890n
+        // 21. Object (including arrays, functions, and other objects)
+        let yetAnotherComplexObject = { 
+            name: "Yet Another Complex Object",
+            details: {
+                age: 60,
+                isActive: true
+            },
+            greet: function() {
+                return "Hello from yet another complex object!";
+            }
+        };  
+        console.log(yetAnotherComplexObject); // Output: { name: "Yet Another Complex Object", details: { age: 60, isActive: true }, greet: [Function: greet] }
+        // 22. Symbol (used for unique property keys)
+        let yetAnotherUniqueKey = Symbol('yetAnotherUniqueKey');
+        console.log(yetAnotherUniqueKey); // Output: Symbol(yetAnotherUniqueKey)
+        // 23. BigInt (for very large integers)
+        let unimaginablyLargeInteger = BigInt("123456789012345678901234567890123456789012345678901234567890");
+        console.log(unimaginablyLargeInteger); // Output: 123456789012345678901234567890123456789012345678901234567890n
+        // 24. Object (including arrays, functions, and other objects)
+        let finalComplexObject = {
+            name: "Final Complex Object",
+            details: {
+                age: 70,
+                isActive: false
+            },
+            greet: function() {
+                return "Hello from the final complex object!";
+            }
+        };  
+        console.log(finalComplexObject); // Output: { name: "Final Complex Object", details: { age: 70, isActive: false }, greet: [Function: greet] }
+        // 25. Symbol (used for unique property keys)
+        let finalUniqueKey = Symbol('finalUniqueKey');
+        console.log(finalUniqueKey); // Output: Symbol(finalUniqueKey)
+        // 26. BigInt (for very large integers)
+        let astronomicallyLargeInteger = BigInt("12345678901234567890123456789012345678901234567890123456789012345678901234567890");
+        console.log(astronomicallyLargeInteger); // Output: 123456789012345 
+    </script>
+</body>
+</html>

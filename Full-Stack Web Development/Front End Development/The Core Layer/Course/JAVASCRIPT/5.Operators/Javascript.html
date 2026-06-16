@@ -1,0 +1,522 @@
+<!--
+        Javascript Course:-
+                5.Operators
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="Javascript.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Operators
+        </title>    
+    </head>
+    <body style="text-align: center; box-shadow: 0px 8px 16px; border-radius: 15px;">
+        <h1 style="text-align: center; color: red;">Javascript Course</h1>
+        <h1 style="color: blue; text-align: center;">Lecture-<u>5</u></h1>
+        <!--Operators-->
+        <h2 style="text-align: center;">(<em><u>Operators</u></em>)</h2>
+        <p style="text-align: center; font-size: 20px;">(There are different types of javascript <u><em>operators</em></u>:)</p>
+        <!--Types-->
+        <h3 style="place-items: center;">   
+            <ul>
+                <li>Arithmetic Operator</li>
+                <li>Assignment Operator</li>
+                <li>Comparison Operator</li>
+                <li>logical Operator</li>
+            </ul>
+        </h3>
+        <!--Arithmetic Operator-->
+        <h2 style="place-items: center;">
+            <ul>
+                <li>Arithmetic Operator</li>
+            </ul>
+        </h2>
+        <p style="font-size: 20px;">(Arithmetic operators perform arithmetic on numbers (literals or variables).)</p>
+        <!--types-->
+        <h3 style="place-items: center;">
+            <ol>
+                <li>Addition Operator (+)</li>
+                <li>Subtraction Operator (-)</li>
+                <li>Multiplication (*)</li>
+                <li>Exponentiation (**)</li>
+                <li>Division Operator (/)</li>
+                <li>Modulus Operator (%)</li>
+                <li>Increment Operator (++)</li>
+                <li>Decrement Operator (--)</li>
+            </ol>
+        </h3>
+        <!--(Arithmetic)1.Addition Operator (+)-->
+        <h2>1.Addition Operator (+)</h2>
+        <p style="font-size: 20px;">(It is used to add two or more variables.)</p>
+        <p style="font-size: 20px;">
+            let a = 5;<br>
+            let b = 5;<br>
+            let c = a + b;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;"><u>Output</u></p>
+        <p style="font-size: 20px;" id="arithmeticAdditionOperator"></p>
+        <!--(Arithmetic)2.Subtraction Operator (-)-->
+        <h2>2.Subtraction Operator (-)</h2>
+        <p style="font-size: 20px;">(is is used to subtract two or more variables.)</p>
+        <p style="font-size: 20px;">
+            let d = 5;<br>
+            let e = 5;<br>
+            let f = d + e;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;"><u>Output</u></p>
+        <p style="font-size: 20px;" id="arithmeticSubtractionOperator"></p>
+        <!--(Arithmetic Operator)3.Multiplication Operator (*)-->
+        <h2>3.Multiplication Operator (*)</h2>
+        <p style="font-size: 20px;">(Is is used to multiply two or more variables.)</p>
+        <p style="font-size: 20px;">
+            let g = 5;<br>
+            let h = 5;<br>
+            let i = g * h;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="arithmeticMultiplicationOperator"></p>
+        <!--(Arithmetic)4.Exponentiation operator (**)-->
+        <h2>4.Exponentiation Operator (**)</h2>
+        <p style="font-size: 20px;">(It is used to take the exponential value form two or more variables.)</p>
+        <p style="font-size: 20px;">
+            let j = 5;<br>
+            let k = 5;<br>
+            let l = j ** k;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="arithmeticExponentiationOperator"></p>
+        <!--(Arithmetic)5.Division Operator (/)-->
+        <h2>5.Division Operator (/)</h2>
+        <p style="font-size: 20px;">(It is used to divide two or more variables.)</p>
+        <p style="font-size: 20px;">
+            let m = 5;<br>
+            let n = 5;<br>
+            let o = m / n;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="arithmeticDivisionOperator"></p>
+        <!--(Arithmetic)6.Modulus operator(%)-->
+        <h2>6.Modulus Operator (%)</h2>
+        <p style="font-size: 20px;">(It is used to get reminder value from two values.)</p>
+        <p style="font-size: 20px;">
+            let p = 5;<br>
+            let q = 5;<br>
+            let r = p % q;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="arithmeticModulusOperator"></p>
+        <!--(Arithmetic)7.Increment Operator (++)-->
+        <h2>7.Increment Operator(++)</h2>
+        <p style="font-size: 20px;">(It is used to increase a value of variable by 1.)</p>
+        <p style="font-size: 20px;">
+            let s = 5;<br>
+            s++;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="arithmeticIncrementOperator"></p>
+        <!--(Arithmetic)8.Decrement Operator (--)-->
+        <h2>8.Decrement Operator(--)</h2>
+        <p style="font-size: 20px;">(It is used to decrease the value of a variable by 1.)</p>
+        <p style="font-size: 20px;">
+            let t = 5;<br>
+            t--;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="arithmeticDecrementOperator"></p>
+        <!--Assignment Operators-->
+        <h2 style="place-items: center;">
+            <ul>
+                <li>Assignment Operator</li>
+            </ul>
+        </h2>
+        <p style="font-size: 20px;">(Assignment operators assign values to JavaScript variables.)</p>
+        <!--Types-->
+        <h3 style="place-items: center;">
+            <ol>
+                <li>Equal Operator (=)</li>
+                <li>Addition Equal Operator (+ =)</li>
+                <li>Subtraction Equal Operator (- =)</li>
+                <li>Multiplication equal Operator (* =)</li>
+                <li>Division Equal Operator (/ =)</li>
+                <li>Modulus Equal Operator (% =)</li>
+                <li>Exponentiation Equal Operator (** =)</li>
+            </ol>
+        </h3>
+        <!--(Assignment)1.Equal Operator (=)-->
+        <h2>1.Equal Operator (=)</h2>
+        <p style="font-size: 20px;">(It is used to assign values to variables)</p>
+        <p style="font-size: 20px;">
+            let u = 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="assignmentEqualOperator"></p>
+        <!--(Assignment)2.Addition Equal operator (+ =)-->
+        <h2>2.Addition Equal Operator (+ =)</h2>
+        <p style="font-size: 20px;">(It is used to assign and add a value)</p>
+        <p style="font-size: 20px;">
+            let v = 5;<br>
+            v += 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="assignmentAdditionEqualOperator"></p>
+        <!--(Assignment)3.Subtraction Equal operator (- =)-->
+        <h2>3.Subtraction Equal Operator (- =)</h2>
+        <p style="font-size: 20px;">(It is used to assign and subtract a value)</p>
+        <p style="font-size: 20px;">
+            let w = 5;<br>
+            w -= 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="assignmentSubtractionEqualOperator"></p>
+        <!--(Assignment)4.Multiplication Equal operator (* =)-->
+        <h2>4.Multiplication Equal Operator (* =)</h2>
+        <p style="font-size: 20px;">(It is used to assign and multiply a value)</p>
+        <p style="font-size: 20px;">
+            let x = 5;<br>
+            x *= 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="assignmentMultiplicationEqualOperator"></p>
+        <!--(Assignment)5.Division Equal operator (/ =)-->
+        <h2>5.Division Equal Operator (/ =)</h2>
+        <p style="font-size: 20px;">(Is is used to assign and divide a value.)</p>
+        <p style="font-size: 20px;">
+            let y = 5;<br>
+            y /= 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="assignmentDivisionEqualOperator"></p>
+        <!--(Assignment)6.Modulus Equal Operator (% =)-->
+        <h2>6.Modulus Equal Operator (% =)</h2>
+        <p style="font-size: 20px;">(It is used to assign a value and get reminder forma value)</p>
+        <p style="font-size: 20px;">
+            let z = 5;<br>
+            z %= 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="assignmentModulusEqualOperator"></p>
+        <!--(Assignment)7.Exponentiation Equal Operator (** =)-->
+        <h2>7.Exponentiation Equal Operator (** =)</h2>
+        <p style="font-size: 20px;">(It is used to assign a value and take the exponentiation of a value.)</p>
+        <p style="font-size: 20px;">
+            let _a = 5;<br>
+            _a **= 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="assignmentExponentiationEqualOperator"></p>
+        <!--Comparison Operator-->
+        <h2 style="place-items: center;">
+            <ul>
+                <li>Comparison Operator</li>
+            </ul>
+        </h2>
+        <p style="font-size: 20px;">(Comparison operators are used to compare two values).</p>
+        <!--Types-->
+        <h3 style="place-items: center;">
+            <ol>
+                <li>Equal to Operator (= =)</li>
+                <li>Equal value and Equal type (= = =)</li>
+                <li>Not Equal Operator (! =)</li>
+                <li>Not Equal value and Not Equal type (! = =)</li>
+                <li>Greater than Operator (>)</li>
+                <li>Less than Operator (<)</li>
+                <li>Greater than or Equal to Operator (> =)</li>
+                <li>Less than or Equal to Operator (< =)</li>
+            </ol>
+        </h3>
+        <!--(Comparison)1.Equal to Operator (= =)-->
+        <h2>1.Equal to Operator (= =)</h2>
+        <p style="font-size: 20px;">(It is used to compare two values are equal!)</p>
+        <p style="font-size: 20px;">
+            let _b = 5;<br>
+            _b == 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="comparisonEqualToOperator"></p>
+        <!--(Comparison)2.Equal value and Equal type Operator (= = =)-->
+        <h2>2.Equal value and Equal type (= = =)</h2>
+        <p style="font-size: 20px;">(It is used to compare two values are equal!)</p>
+        <p style="font-size: 20px;">
+            let _c = 5;<br>
+            _c === 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="comparisonEqualValueAndEqualTypeOperator"></p>
+        <!--(Comparison)3.Not Equal Operator (! =)-->
+        <h2>3.Not Equal Operator (! =)</h2>
+        <p style="font-size: 20px;">(It is used to compare two values)</p>
+        <p style="font-size: 20px;">
+            let _d = 5;<br>
+            _d != 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="comparisonNotEqualOperator"></p>
+        <!--(Comparison)4.Not Equal value and Not Equal type Operator (!==)-->
+        <h2>4.Not Equal value and Not Equal Type operator (! = =)</h2>
+        <p style="font-size: 20px;">(It is used to compare two values)</p>
+        <p style="font-size: 20px;">
+            let _e = 5;<br>
+            _e !== 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="comparisonNotEqualValueAndNotEqualTypeOperator"></p>
+        <!--(Comparison)5.Greater than Operator (>)-->
+        <h2>5.Greater than Operator (>)</h2>
+        <p style="font-size: 20px;">(It is used to compare two values)</p>
+        <p style="font-size: 20px;">
+            let _f = 5;<br>
+            _f !== 5;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="comparisonGreaterThanOperator"></p>
+        <!--(Comparison)6.Less than Operator (<)-->
+        <h2>6.Less than Operator (<)</h2>
+        <p style="font-size: 20px;">It is used to compare two values</p>
+        <p style="font-size: 20px;">
+            let _g = 5;<br>
+            _g < 3;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="comparisonLessThanOperator"></p>
+        <!--(Comparison)7.Greater than or Equal to Operator (> =)-->
+        <h2>7.Greater than or Equal to Operator (> =)</h2>
+        <p style="font-size: 20px;">It is used to compare two values</p>
+        <p style="font-size: 20px;">
+            let _h = 5;<br>
+            _h >= 3;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="comparisonGreaterThanOrEqualToOperator"></p>
+        <!--(Comparison)8.Less than or Equal to Operator (< =)-->
+        <h2>8.Less than or equal to operator (< =)</h2>
+        <p style="font-size: 20px;">It is used to compare two values</p>
+        <p style="font-size: 20px;">
+            let _i = 5;<br>
+            _i <= 3;<br>
+        </p>
+        <!--output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="comparisonLessThanOrEqualToOperator"></p>
+        <!--Logical Operator-->
+        <h2 style="place-items: center;">
+            <ul>
+                <li>Logical Operator</li>
+            </ul>
+        </h2>
+        <p style="font-size: 20px;">(Logical operators are used to determine the logic between variables or values.)</p>
+        <!--Types-->
+        <h3 style="place-items: center;">
+            <ol>
+                <li>And Operator (& &)</li>
+                <li>OR Operator (| |)</li>
+                <li>Note Operator (!)</li>
+            </ol>
+        </h3>
+        <!--(Logical)1.And Operator (& &)-->
+        <h2>1.And Operator (& &)</h2>
+        <p style="font-size: 20px;">(The OR (&&) operator returns true if both expressions are true, otherwise false:)</p>
+        <p style="font-size: 20px;">
+            let _j = 5;<br>
+            let _k = 5;<br>
+            (_j < 10 & & _k > 1)<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="logicalAndOperator"></p>
+        <!--(Logical)2.Or Operator (| |)-->
+        <h2>2.OR Operator (| |)</h2>
+        <p style="font-size: 20px;">(The OR (| |) operator returns true if one or both expressions are true, otherwise false:)</p>
+        <p style="font-size: 20px;">
+            let _l = 5;<br>
+            let _m = 5;<br>
+            (_l === 5 || _m === 5)<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="logicalOrOperator"></p>
+        <!--(Logical)3.Not Operator (!)-->
+        <h2>3.Not Operator (!)</h2>
+        <p style="font-size: 20px;">(It is used to revers the value)</p>
+        <p style="font-size: 20px;">
+            let _n = 5;<br>
+            !(_n == 8);<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="logicalNotOperator"></p>
+        <!--Internal-javascript-->
+        <script defer>
+            // (Arithmetic)1.Addition Operator
+            let a = 5;
+            let b = 5;
+            let c = a + b;
+            // execute (Arithmetic)1.Addition Operator (+)
+            document.getElementById("arithmeticAdditionOperator").innerHTML = "c = " + c;
+            // (Arithmetic)2.Subtraction Operator (-)
+            let d = 5;
+            let e = 5;
+            let f = d - e;
+            // execute (Arithmetic)2.Subtraction Operator (-)
+            document.getElementById("arithmeticSubtractionOperator").innerHTML = "f = " + f;
+            // (Arithmetic)3.Multiplication Operator (*)
+            let g = 5;
+            let h = 5;
+            let i = g * h;
+            // execute (Arithmetic)3.Multiplication operator (*)
+            document.getElementById("arithmeticMultiplicationOperator").innerHTML = "i = " + i;
+            // (Arithmetic)4.Exponentiation operator (**)
+            let j = 5;
+            let k = 5;
+            let l = j ** k;
+            // execute (Arithmetic)4.Exponentiation operator (**)
+            document.getElementById("arithmeticExponentiationOperator").innerHTML = "l = " + l;
+            // (Arithmetic)5.division operator (/)
+            let m = 5;
+            let n = 5;
+            let o = m / n;
+            //execute (Arithmetic)5.Division operator (/)
+            document.getElementById("arithmeticDivisionOperator").innerHTML = "o = " + o;
+            // (Arithmetic)6.Modulus operator (%)
+            let p = 5;
+            let q = 5;
+            let r = p % q;
+            // execute (Arithmetic)6.Modulus operator (%)
+            document.getElementById("arithmeticModulusOperator").innerHTML = "r = " + r;
+            // (Arithmetic)7.Increment operator (++)
+            let s = 5;
+            s++;
+            //execute (Arithmetic)7.Increment operator (++)
+            document.getElementById("arithmeticIncrementOperator").innerHTML = "s = " + s;
+            // (Arithmetic)9.Decrement operator (--)
+            let t = 5;
+            t--;
+            //execute (Arithmetic)9.Decrement operator (--)
+            document.getElementById("arithmeticDecrementOperator").innerHTML = "t = " + t;
+            // (Assignment)1.Equal Operator ( =)
+            let u = 5;
+            //execute (Assignment)1.Equal Operator ( =)
+            document.getElementById("assignmentEqualOperator").innerHTML = "u = " + u;
+            // (Assignment)2.Addition Equal Operator (+ =)
+            let v = 5;
+            v += 5;
+            //execute (Assignment)2.Addition Equal Operator (+ =)
+            document.getElementById("assignmentAdditionEqualOperator").innerHTML = "v = " + v;
+            // (Assignment)3.Subtraction Equal Operator (- =)
+            let w = 5;
+            w -= 5;
+            //execute (Assignment)3.Subtraction Equal Operator (- =)
+            document.getElementById("assignmentSubtractionEqualOperator").innerHTML = "w = " + w;
+            // (Assignment)4.Multiplication Equal Operator (* =)
+            let x = 5;
+            x *= 5;
+            //execute (Assignment)4.Multiplication Equal Operator (* =)
+            document.getElementById("assignmentMultiplicationEqualOperator").innerHTML = "x = " + x;
+            // (Assignment)5.Division Equal Operator (/ =)
+            let y = 5;
+            y /= 5;
+            //execute (Assignment)5.Division Equal Operator (/ =)
+            document.getElementById("assignmentDivisionEqualOperator").innerHTML = "y = " + y;
+            // (Assignment)6.Modulus Equal Operator (% =)
+            let z = 5;
+            z %= 5;
+            //execute (Assignment)6.Modulus Equal Operator (% =)
+            document.getElementById("assignmentModulusEqualOperator").innerHTML = "z = " + z;
+            // (Assignment)7.Exponentiation Equal Operator (** =)
+            let _a = 5;
+            _a **= 5;
+            //execute (Assignment)7.Exponentiation Equal Operator (** =)
+            document.getElementById("assignmentExponentiationEqualOperator").innerHTML = "_a = " + _a;
+            // (Comparison)1.Equal to operator (= =)
+            let _b = 5;
+            // execute (Comparison)1.Equal to operator (= =)
+            document.getElementById("comparisonEqualToOperator").innerHTML = _b == 5;
+            // (Comparison)2.Equal value and Equal type Operator (= = =)
+            let _c = 5;
+            // execute (Comparison)2.Equal value and Equal type Operator (= = =)
+            document.getElementById("comparisonEqualValueAndEqualTypeOperator").innerHTML = _c === 5;
+            // (Comparison)3.Not Equal Operator (! =)
+            let _d = 5;
+            // execute (Comparison)3.Not Equal Operator (! =)
+            document.getElementById("comparisonNotEqualOperator").innerHTML = _d != 5;
+            // (Comparison)4.Not Equal value and Not Equal type Operator (!==)
+            let _e = 5;
+            // execute (Comparison)4.Not Equal value and Not Equal type Operator (!==)
+            document.getElementById("comparisonNotEqualValueAndNotEqualTypeOperator").innerHTML = _e !== 5;
+            // (Comparison)5.Greater than Operator (>)
+            let _f = 5;
+            // execute (Comparison)5.Greater than Operator (>)
+            document.getElementById("comparisonGreaterThanOperator").innerHTML = _f > 3;
+            // (Comparison)6.Less than Operator (<)
+            let _g = 5;
+            // execute (Comparison)6.Less than Operator (<)
+            document.getElementById("comparisonLessThanOperator").innerHTML = _g < 3;
+            // (Comparison)7.Greater than or Equal to Operator (> =)
+            let _h = 5;
+            // execute (Comparison)7.Greater than or Equal to Operator (> =)
+            document.getElementById("comparisonGreaterThanOrEqualToOperator").innerHTML = _h >= 3;
+            // (Comparison)8.Less than or Equal to Operator (< =)
+            let _i = 5;
+            // execute (Comparison)8.Less than or Equal to Operator (< =)
+            document.getElementById("comparisonLessThanOrEqualToOperator").innerHTML = _i <= 3;
+            // (Logical)1.And Operator (& &)
+            let _j = 5;
+            let _k = 5;
+            // execute (Logical)1.And Operator (& &)
+            document.getElementById("logicalAndOperator").innerHTML = (_j < 10 && _k > 1);
+            // (Logical)2.OR Operator (| |)
+            let _l = 5;
+            let _m = 5;
+            // execute (Logical)2.OR Operator (| |)
+            document.getElementById("logicalOrOperator").innerHTML = (_l === 5 || _m === 5);
+            // (Logical)3.Not Operator (!)
+            let _n = 5;
+            // execute (Logical)3.Not Operator (!)
+            document.getElementById("logicalNotOperator").innerHTML = !(_n == 5);
+        </script>
+    </body>
+</html>

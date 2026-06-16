@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // maps
+        let myMap = new Map();
+        myMap.set("name", "John");
+        myMap.set("age", 30);
+        myMap.set("city", "New York");
+        console.log(myMap);
+        console.log(myMap.get("name"));
+        console.log(myMap.has("age"));
+        myMap.delete("city");
+        console.log(myMap); 
+        //  maps with array
+        let myMap2 = new Map();
+        myMap2.set("name", ["John", "Jane", "Doe"]);
+        console.log(myMap2.get("name"));
+            // maps with object
+        let myMap3 = new Map();
+        myMap3.set("person", {name: "John", age: 30});
+        console.log(myMap3.get("person"));
+        // maps with function
+        let myMap4 = new Map();
+        myMap4.set("greet", function() {
+            console.log("Hello, World!");
+        });
+        myMap4.get("greet")();
+        
+    </script>
+</body>
+</html>

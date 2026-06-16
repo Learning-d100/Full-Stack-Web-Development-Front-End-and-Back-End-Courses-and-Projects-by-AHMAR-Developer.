@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // objects in javascript
+        // objects are collection of key value pairs
+        // objects are used to store data in a structured way
+        // objects are created using curly braces {}
+        // objects can have properties and methods
+        // properties are the values associated with an object  
+        let person = {
+            name: "John",
+            age: 30,
+            city: "New York"
+        };
+        console.log(person.name); // John
+        console.log(person.age); // 30
+        // we can also add new properties to an object
+        person.country = "USA";
+        console.log(person.country); // USA
+        // we can also delete properties from an object
+        delete person.city; 
+        console.log(person.city); // undefined
+        //  we can also check if a property exists in an object
+        console.log("name" in person); // true
+        console.log("city" in person); // false
+        // we can also loop through the properties of an object using for...in loop
+        for (let key in person) {
+            console.log(key + ": " + person[key]);
+        }
+            // name: John
+            // age: 30
+            // country: USA
+            // we can also use Object.keys() method to get an array of the keys of an object
+            //  we can also use Object.values() method to get an array of the values of an object
+            // we can also use Object.entries() method to get an array of the key-value pairs
+
+            let keys = Object.keys(person);
+            console.log(keys); // ["name", "age", "country"]        
+    </script>
+</body>
+</html>

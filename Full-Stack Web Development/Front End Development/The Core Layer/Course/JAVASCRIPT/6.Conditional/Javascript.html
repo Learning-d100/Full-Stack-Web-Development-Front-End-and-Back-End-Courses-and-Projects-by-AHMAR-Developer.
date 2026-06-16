@@ -1,0 +1,152 @@
+<!--
+        Javascript Course:-
+                6. Conditional
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="Javascript.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Conditional
+        </title>
+        <!--Internal-CSS-->    
+        <style>
+            body{
+                border: none;
+                box-sizing: border-box;
+                box-shadow: 0px 8px 16px black;
+                border-radius: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: red;"><u>Javascript</u> Course</h1>
+        <!--Conditional Statements-->
+        <h2>6.<em><u>Conditional</u></em> Statements</h2>
+        <h3 style="place-items: center;">
+            <ul>
+                <li><em><u>If</u></em> Statement</li>
+                <li><em><u>If-else</u></em> Statement</li>
+                <li><em><u>If-else-if</u></em> Statement</li>
+                <li><em><u>Switch</u></em> Statement</li>
+            </ul>
+        </h3>
+        <!--1.If Statement-->
+        <h2>1.<em><u>If</u></em> Statement</h2>
+        <p style="font-size: 20px;">(Use the JavaScript if statement to execute a block of code when a condition is true.)</p>
+        <p style="font-size: 20px;">
+            < p id="ifStatement" >< / p ><br>
+            let age = 18;<br>
+            if (age >= 18){<br>
+                text = "You can drive!";<br>
+            }<br>
+            document.getElementById("ifStatement").innerHTML = text;<br>
+        </p>
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="ifStatement"></p>
+        <!--2.If-else statement-->
+        <h2>2.<em><u>If-else</u></em> Statement</h2>
+        <p style="font-size: 20px;">(Use the else statement to specify a block of code to be executed if a condition is false.)</p>
+        <p style="font-size: 20px;">
+            < p id="ifElseStatemnt" >< / p ><br>
+            let hour = new Date().getHours();<br>
+            let greeting;<br>
+            if (hour < 18) {<br>
+                greeting = Good Morning!;<br>
+            }<br>
+            else{<br>
+                greeting = Good Evening!;<br>
+            }<br>
+            document.getElementById("ifElseStatement").innerHTML = greeting;<br>
+        </p>
+        
+        <!--Output-->
+        <p style="font-size: 20px;">Output</p>
+        <p style="font-size: 20px;" id="ifElseStatement"></p>
+        <!--3.If-else-if statement-->
+        <p id="demo"></p>
+        <!--Internal-javascript-->
+        <script defer>
+            // If statement
+            let age = 18;
+            if (age >= 18) {
+                text = "You can drive!";
+            }
+            // execute if statement
+            document.getElementById("ifStatement").innerHTML = text;
+            // if else statement
+            let hour = new Date().getHours();
+            let greeting;
+            if (hour < 18) {
+                greeting = "Good Morning!";
+            }
+            else{
+                greeting = "Good Evening!";
+            }
+            //execute if else statement
+            document.getElementById("ifElseStatement").innerHTML = greeting;
+            const time = new Date().getHours();
+let _greeting;
+if (time < 10) {
+  _greeting = "Good morning";
+} else if (time < 20) {
+  _greeting = "Good day";
+} else {
+  _greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = _greeting;
+let day;
+let date = new Date().getDay();
+ 
+switch (date) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+
+document.getElementById("demo1").innerHTML = "Today is " + day;
+        </script>
+    </body>
+</html>
