@@ -1,0 +1,10 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+.table-primary{
+    background-color: #cce5ff;
+    font-size: 20px;
+}
