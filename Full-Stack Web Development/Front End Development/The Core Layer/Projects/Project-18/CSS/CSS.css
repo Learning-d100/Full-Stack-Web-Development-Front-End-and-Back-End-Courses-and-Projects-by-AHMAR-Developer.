@@ -1,0 +1,170 @@
+/* reset and base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* body styling */
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ffca28, #fffde7);
+    padding: 20px;
+}
+/* container styling */
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+}
+/* main card styling */
+.card{
+    background: #ffb300;
+    width: 100%;
+    padding: 35px 25px;
+    border-radius: 4px;
+    box-sizing: 0 10px 25px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* heading styling */
+h1{
+    color: #263228;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
+}
+/* lock icon styling */
+.lock-icon{
+    color: #d32f2f;
+    font-style: normal;
+}
+/* password display screen styling */
+.display-container{
+    width: 100%;
+    background-color: #f7e6be;
+    padding: 12px 15px;
+    border-radius: 2px;
+    margin-bottom: 25px;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* password display styling */
+#password-display{
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #37474f;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* setting and controls styling */
+.length-label{
+    color: #263228;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: block;
+}
+/* custom slider styling */
+.slider-container{
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+/* slider styling */
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 2px;
+    outline: none;
+}
+/* slider thumb styling */
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 22px;
+    border-radius: 6px;
+    background: #d32f2f;
+    cursor: pointer;
+    border: 1px solid #b71c1c;
+}
+.slider::moz-range-thumb{
+    width: 12px;
+    height: 22px;
+    border-radius: 6px;
+    background: #d32f2f;
+    cursor: pointer;
+    border: 1px solid #b71c1c;
+}
+/* option list styling */
+.options-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    max-width: 260px;
+    margin: 0 auto;
+}
+/* option item styling */
+.option-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #263228;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+/* option item checkbox styling */
+.option-item input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    accent-color: #263228;
+}
+/* generate button */
+.generate-btn{
+    width: 100%;
+    background: #e4be68;
+    border: none;
+    padding: 14px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #263228;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+/* generate button with hover styling */
+.generate-btn:hover{
+    background-color: #ffae00;
+    padding: 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.2s, transform 0.1s;
+}
+/* active generate button styling */
+.generate-btn:active{
+    transform: scale(0.99);
+}

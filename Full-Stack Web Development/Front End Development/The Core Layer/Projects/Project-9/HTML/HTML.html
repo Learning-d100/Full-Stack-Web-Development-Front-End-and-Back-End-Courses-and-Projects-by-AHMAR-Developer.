@@ -1,0 +1,121 @@
+<!--
+        Projects-9:-
+                Star Pattern in javascript
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="/Front End Development/Projects/Project-9/JAVASCRIPT/JAVASCRIPT.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="D:\Documents\Full-Stack Web Development/Front End Development/Projects/Project-9/CSS/CSS.css">
+        <title>
+            Star Patterns
+        </title>    
+    </head>
+    <body>
+        <h3 class="project-heading">Project-9:-</h3>
+        <h1>Star Patterns</h1><br>
+        <!--Right-Angle-Star-Pattern-->
+        <section>
+            <h2>Right Angle Star Pattern</h2><br>
+            <!--Number of rows-->
+            <input type="number" id="number1" placeholder="Enter the number of rows" required> 
+            <!--Button-->
+            <button id="button" onclick="generateRightAnglePattern()">Generate</button>
+            <p id="rightAngleStarPattern"></p>
+        </section><br>
+        <!--Mirror-Right-Angle-Star-Pattern-->
+        <section>
+            <h2>Mirror Right Angle Star Pattern</h2><br>
+            <!--Number of rows-->
+            <input type="number" id="number2" placeholder="Enter the number of rows" required> 
+            <!--Button-->
+            <button id="button2" onclick="generateMirrorRightAnglePattern()">Generate</button>
+            <p id="mirrorRightAngleStarPattern"></p>
+        </section><br>
+        <!--Inverted-Right-Angle-Star-Pattern-->
+        <section>
+            <h2>Inverted Right Angle Star Pattern</h2>
+            <!--Number of rows-->
+            <input type="number" id="number3" placeholder="Enter the number of rows" required> 
+            <!--Button-->   
+            <button id="button3" onclick="generateInvertedRightAnglePattern()">Generate</button>
+            <p id="invertedRightAngleStarPattern"></p>
+        </section><br>
+        <!--Inverted-Mirror-Right-Angle-Star-Pattern-->
+        <section>
+            <h2>Inverted Mirror Right Angle Star Pattern</h2>
+            <!--Number of rows-->
+            <input type="number" id="number4" placeholder="Enter the number of rows" required> 
+            <!--Button-->   
+            <button id="button4" onclick="generateInvertedMirrorRightAnglePattern()">Generate</button>
+            <p id="invertedMirrorRightAngleStarPattern"></p>
+        </section><br>
+        <!--pyramid-Star-Pattern-->
+        <section>
+            <h2>Pyramid Star Pattern</h2>
+            <!--Number of rows-->
+            <input type="number" id="number5" placeholder="Enter the number of rows" required> 
+            <!--Button-->   
+            <button id="button5" onclick="generatePyramidStarPattern()">Generate</button>
+            <p id="pyramidStarPattern"></p>
+        </section><br>
+        <!--Inverted-Pyramid-Star-Pattern-->
+        <section>
+            <h2>Inverted Pyramid Star Pattern</h2>
+            <!--Number of rows-->
+            <input type="number" id="number6" placeholder="Enter the number of rows" required> 
+            <!--Button-->   
+            <button id="button6" onclick="generateInvertedPyramidStarPattern()">Generate</button>
+            <p id="invertedPyramidStarPattern"></p>
+        </section><br>
+        <!--Hollow-Square-Pattern-->
+        <section>
+            <h2>Hollow Square Star Pattern</h2>
+            <!--Number of rows-->
+            <input type="number" id="number7" placeholder="Enter the number of rows" required> 
+            <!--Button-->   
+            <button id="button7" onclick="generateHollowSquareStarPattern()">Generate</button>
+            <p id="hollowSquareStarPattern"></p>
+        </section><br>
+        <!--Rhombus-Star-Pattern-->
+        <section>
+            <h2>Rhombus Star Pattern</h2>
+            <!--Number of rows-->
+            <input type="number" id="number8" placeholder="Enter the number of rows" required> 
+            <!--Button-->   
+            <button id="button8" onclick="generateRhombusStarPattern()">Generate</button>
+            <p id="rhombusStarPattern"></p>
+        </section><br>
+        <!--Hollow-Pyramid-Star-Pattern-->
+        <section>
+            <h2>Hollow Pyramid Star Pattern</h2>
+            <!--Number of rows-->
+            <input type="number" id="number9" placeholder="Enter the number of rows" required> 
+            <!--Button-->   
+            <button id="button9" onclick="generateHollowPyramidStarPattern()">Generate</button>
+            <p id="hollowPyramidStarPattern"></p>
+        </section><br>
+    </body>
+</html>

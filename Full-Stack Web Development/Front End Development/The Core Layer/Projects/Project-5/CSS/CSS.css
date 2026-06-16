@@ -1,0 +1,44 @@
+/* Chessboard Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 2px solid #333;
+}
+.chessboard div {
+    width: 60px;
+    height: 60px;
+}
+.chessboard div:nth-child(odd) {
+    background-color: #fff;
+}
+.chessboard div:nth-child(even) {
+    background-color: #000;
+}
+.chessboard div:nth-child(8n + 1),
+.chessboard div:nth-child(8n + 3),
+.chessboard div:nth-child(8n + 5),
+.chessboard div:nth-child(8n + 7) {
+    background-color: #000;
+}
+.chessboard div:nth-child(8n + 2),
+.chessboard div:nth-child(8n + 4),
+.chessboard div:nth-child(8n + 6),
+.chessboard div:nth-child(8n + 8) {
+    background-color: #fff;
+}
+.row:nth-child(odd) div:nth-child(odd),
+.row:nth-child(even) div:nth-child(even) {
+    background-color: #000;
+}
+.row:nth-child(odd) div:nth-child(even),
+.row:nth-child(even) div:nth-child(odd) {
+    background-color: #fff;
+}

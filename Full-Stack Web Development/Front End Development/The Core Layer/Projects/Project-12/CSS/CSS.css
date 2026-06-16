@@ -1,0 +1,73 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+/* body styling */
+body{
+    background-color: #7adfff; /* Light blue background */
+}
+/* container styling */
+.container{
+    max-width: 1200px;
+    height: 200px;
+    margin-top: 72px;
+    margin-bottom: 200px;
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+}
+/* box styling */
+.box{
+    width: 100%;
+    background-color: white;
+    height: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* grid styling */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+/* responsive display */
+/* pc monitors display */
+@media screen and (width > 1200px){
+    /* grid */
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .container{
+        margin: 72px  auto;
+    }
+}
+/* tablet screen display */
+@media screen and (width < 1200px) and (width > 450px){
+    /* grid */
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .container{
+        margin: 48px  auto;
+    }
+}
+/* mobile screen display */
+@media screen and (width < 450px){
+    /* grid */
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+    /* container */
+    .container{
+        margin: 32px auto;
+    }
+}

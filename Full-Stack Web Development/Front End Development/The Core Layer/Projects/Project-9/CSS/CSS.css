@@ -1,0 +1,89 @@
+body{
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid #eee;
+    margin: 20px;
+    font-family: 'Segoe UI', 'Tahoma' ,'Geneva', Verdana, sans-serif;
+}
+.project-heading{
+    color: #007BFF;
+    text-shadow: 2px 2px 5px rgba(0,123,255,0.5);
+    margin-bottom: 30px;
+    font-weight: 1000;
+    font-size: 36px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 3px 2px rgba(0,0,0,0.5);
+}
+h2{ 
+    text-align: center;
+    color: #555;
+    margin-bottom: 10px;
+    text-shadow: 1px 2px 1px rgba(0,0,0,0.90);
+}
+section{
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: -1px 1px 10px rgba(0,0,0,0.5);
+    width: 300px;
+}
+input[type="number"]{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+input[type="number"]:focus{
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+input[type="number"]::placeholder{
+    color: #999;
+    font-style: italic;
+}
+input[type="number"]:hover{
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+button{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 95px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+button:hover{
+    background-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0,86,179,0.5);
+}
+button:focus{
+    background-color:  rgb(5, 155, 38);
+    box-shadow: 0 0 5px rgba(5, 155, 38);
+    border: 1px solid  rgba(5, 155, 38);
+}
+p{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: inset -1px -1px 5px 5px rgba(0,0,0,0.5);
+    font-size: 20px;
+    background-color: #fff;
+    padding-left: 50px;
+}

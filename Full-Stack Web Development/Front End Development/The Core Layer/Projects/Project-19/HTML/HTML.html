@@ -1,0 +1,73 @@
+<!--
+        Projects-19:-
+                    Marks and Percentage Calculator
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="../JAVASCRIPT/JAVASCRIPT.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../CSS/CSS.css"> 
+        <title>
+            Marks and Percentage Calculator
+        </title>    
+    </head>
+    <body>
+        <!--Background-->
+        <div class="background">
+            <!--container-->
+            <div class="container">
+                <!--Box-->
+                <div class="box">
+                    <!--Form-->
+                    <form onsubmit="calculateMarks(event)" class="calculate-from" id="calculateForm">
+                        <!--Math-->
+                        <input type="number" min="0" max="75" name="maths" placeholder="Maths" required>
+                        <!--English-->
+                        <input type="number" min="0" max="75" name="english" placeholder="English" required>
+                        <!--Computer-Science-->
+                        <input type="number" min="0" max="60" name="computer science" placeholder="Computer Science" required>
+                        <!--Urdu-->
+                        <input type="number" min="0" max="75" name="urdu" placeholder="Urdu" required>
+                        <!--Physics-->
+                        <input type="number" min="0" max="60" name="physics" placeholder="Physics" required>
+                        <!--Islamiyat-->
+                        <input type="number" min="0" max="50" name="islamiyat" placeholder="Islamiyat" required>
+                        <!--Al-Quran-->
+                        <input type="number" min="0" max="50" name="al-quran" placeholder="Al-Quran" required>
+                        <!--Submit-Button-->
+                        <button type="submit" class="primary-btn">Calculate</button>
+                    </form>
+                    <!--Result-->
+                    <p id="result" class="result"></p>
+                </div>
+                <!--Content-->
+                <div class="content">
+                    <h2>Calculate Your</h2>
+                    <h1>Marks & Percentage</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
