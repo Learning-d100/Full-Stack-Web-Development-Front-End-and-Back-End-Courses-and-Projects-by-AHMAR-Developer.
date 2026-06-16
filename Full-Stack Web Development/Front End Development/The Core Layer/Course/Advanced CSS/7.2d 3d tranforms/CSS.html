@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+.a{
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: scaleX(0.5);
+}
+#myDiv {
+  transform: rotate(20deg);
+}.b {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv1 {
+  transform: skewX(20deg);
+}.c {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv2 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+#myDiv3{
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+</style>
+</head>
+<body>
+
+<h1>The rotate() Method</h1>
+
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated clockwise 20 degrees.
+</div>
+<h1>The scaleX() Method</h1>
+
+<p>The scaleX() method increases or decreases the width of an element.</p>
+
+<div class="a">
+This div element is half of its original width.
+<h1>The skewX() Method</h1>
+
+<p>The skewX() method skews an element along the X-axis by the given angle.</p>
+
+<div class="b">
+This a normal div element.
+</div>
+
+<div id="myDiv1">
+This div element is skewed 20 degrees along the X-axis.
+</div>
+<h1>The matrix() Method</h1>
+
+<p>The matrix() method combines all the 2D transform methods into one.</p>
+
+<div class="c">
+This a normal div element.
+</div>
+
+<div id="myDiv2">
+Using the matrix() method.
+</div>
+
+<div id="myDiv3">
+Another use of the matrix() method.
+</div>
+</body>
+</html>
+
+

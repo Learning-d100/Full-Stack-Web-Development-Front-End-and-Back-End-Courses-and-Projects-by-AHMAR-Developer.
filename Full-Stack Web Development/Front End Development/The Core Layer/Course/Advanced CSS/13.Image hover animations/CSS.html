@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container1:hover .image1 {
+  opacity: 0.3;
+}
+
+.container1:hover .middle {
+  opacity: 1;
+}
+
+.text1 {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image2 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay1 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text2 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container3 {
+  position: relative;
+  width: 50%;
+}
+
+.image3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container3:hover .overlay2 {
+  height: 100%;
+}
+
+.text3 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container4 {
+  position: relative;
+  width: 50%;
+}
+
+.image4 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container4:hover .overlay3 {
+  width: 100%;
+}
+
+.text4 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container5 {
+  position: relative;
+  width: 50%;
+}
+
+.image5 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay4 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container5:hover .overlay4 {
+  width: 100%;
+  left: 0;
+}
+
+.text5 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Fade in Overlay</h2>
+
+<div class="container">
+  <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+<h2>Fade in a Box</h2>
+
+<div class="container1">
+  <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Avatar" class="image1" style="width:100%">
+  <div class="middle">
+    <div class="text1">John Doe</div>
+  </div>
+</div>
+<h2>Slide in Overlay from the Top</h2>
+
+<div class="container2">
+  <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Avatar" class="image2">
+  <div class="overlay1">
+    <div class="text2">Hello World</div>
+  </div>
+</div>
+<h2>Slide in Overlay from the Bottom</h2>
+
+<div class="container3">
+  <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Avatar" class="image3">
+  <div class="overlay2">
+    <div class="text3">Hello World</div>
+  </div>
+</div>
+<h2>Slide in Overlay from the Left</h2>
+
+<div class="container4">
+  <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Avatar" class="image4">
+  <div class="overlay3">
+    <div class="text4">Hello World</div>
+  </div>
+</div>
+<h2>Slide in Overlay from the Right</h2>
+
+<div class="container5">
+  <img src="https://cdn-icons-png.flaticon.com/512/9187/9187604.png" alt="Avatar" class="image5">
+  <div class="overlay4">
+    <div class="text5">Hello World</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
