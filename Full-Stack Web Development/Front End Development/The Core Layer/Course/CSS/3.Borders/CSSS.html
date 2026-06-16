@@ -1,0 +1,202 @@
+<!--
+        CSS Course:-
+                3.Borders
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="Javascript.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Borders
+        </title>
+        <!--Internal CSS-->
+        <style>
+            .dotted{
+                border-style: dotted;
+            }
+            .dashed{
+                border-style: dashed;
+            }
+            .solid{
+                border-style: solid;
+            }
+            .double{
+                border-style: double;
+            }
+            .groove{
+                border-style: groove;
+            }
+            .ridge{
+                border-style: ridge;
+            }
+            .inset{
+                border-style: inset;
+            }
+            .outset{
+                border-style: outset;
+            }
+            .none{
+                border-style: none;
+            }
+            .hidden{
+                border-style: hidden;
+            }
+            .mix{
+                border-style: dotted dashed solid double;
+            }
+            p.one {
+                border-style: solid;
+                border-width: 5px;
+            }
+            p.two {
+                border-style: solid;
+                border-width: medium;
+            }
+            p.three {
+                border-style: dotted;
+                border-width: 2px;
+            }
+            p.four {
+                border-style: dotted;
+                border-width: thick;
+            }
+            p.five {
+                border-style: double;
+                border-width: 15px;
+            }
+            p.six {
+                border-style: double;
+                border-width: thick;
+            }
+            p.normal {
+  border: 2px solid red;
+  padding: 5px;
+}
+
+p.round1 {
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+p.round2 {
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+.d {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+.a {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+.b {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+.c {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+        </style>    
+    </head>
+    <body>
+        <hr style="border-color: red;"">
+        <p>
+        <h1 style="color: red; text-align: center; text-decoration: underline;">CSS Course by Ahmar Developer...</h1>
+        <h1 style="color: blue; text-align: center; text-decoration: underline;">Lecture-3.(Borders)</h1>
+        <hr style="border-color: red;">
+        <h2 style="text-decoration: underline;">1.Border Styles</h2>
+        <h3>The border-style Property</h3>
+        <p>This property specifies what kind of border to display:</p>
+        <p class="dotted">A <mark>dotted</mark> border</p>
+        <p class="dashed">A <mark>dashed</mark> border</p>
+        <p class="solid">A <mark>solid</mark> border</p>
+        <p class="double">A <mark>double</mark> border</p>
+        <p class="groove">A <mark>groove</mark> border</p>
+        <p class="ridge">A <mark>ridge</mark> border</p>
+        <p class="inset">A <mark>inset</mark> border</p>
+        <p class="outset">A <mark>outset</mark> border</p>
+        <p class="none"><mark>No</mark> border</p>
+        <p class="hidden">A <mark>hidden</mark> border</p>
+        <p class="mix">A <mark>mixed</mark> border</p>
+        <hr style="border-color: red;">
+        <h2 style="text-decoration: underline;">2.Border width</h2>
+        <h2>The border-width Property</h2>
+        <p>This property specifies the width of the four borders:</p>
+        <p class="one">Some text.</p>
+        <p class="two">Some text.</p>
+        <p class="three">Some text.</p>
+        <p class="four">Some text.</p>
+        <p class="five">Some text.</p>
+        <p class="six">Some text.</p>
+        <p><b>Note:</b> The "border-width" property does not work if it is used alone. Always specify the "border-style" property to set the borders first.</p>
+        <hr style="border-color: red;">
+        <h2 style="text-decoration: underline;">3.Border radius</h2>
+        <h2>The border-radius Property</h2>
+        <p>This property is used to add rounded borders to an element:</p>
+        <p class="normal">Normal border</p>
+        <p class="round1">Round border</p>
+        <p class="round2">Rounder border</p>
+        <p class="round3">Roundest border</p>
+        <h2>4.margin</h2>
+        <h2>Using individual margin properties</h2>
+
+<div class="d">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+<h2>padding</h2>
+<h2>Using individual padding properties</h2>
+
+<div class="a">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+<h2>width and height</h2>
+<h2>Set the height and width of an element</h2>
+
+<div class="b">This div element has a height of 200px and a width of 50%.</div>
+<h2>box model</h2>
+<h2>Demonstrating the Box Model</h2>
+
+<p>The CSS box model is essentially a box that wraps around every HTML element.</p>
+<p>It consists of (from innermost part to outermost part): content, padding, border, and margin.</p>
+
+<div class="c">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+    </body>
+</html>

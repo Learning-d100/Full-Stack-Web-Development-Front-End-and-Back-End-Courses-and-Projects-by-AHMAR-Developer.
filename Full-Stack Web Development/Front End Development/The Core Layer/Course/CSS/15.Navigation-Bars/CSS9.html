@@ -1,0 +1,109 @@
+<!--
+        CSS Course:-
+            15.Navigation bars
+                9.dropdown in horizontal navbar
+        --><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="Javascript.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Dropdown in horizontal navbar
+        </title>
+        <!--Internal css--> 
+        <style>
+            .extra{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #38444d;
+            }
+            li {
+                float: left;
+            }
+            li a, .dropbtn{
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-style: italic;
+            }
+            li a:hover, .dropdown:hover .dropbtn {
+                background-color: red;
+            }
+            li.dropdown {
+                display: inline-block;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                max-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+        </style>   
+    </head>
+    <body style="padding-top: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 5px;">
+        <h1 style="border: 1px solid red; border-radius: 10px; color: red; text-decoration: underline; text-align: center; margin-left: 530px; margin-right: 530px; box-shadow: 0 2px 4px 0, 0 3px 10px 0;">CSS Course by Ahmar Developer...<br></h1>
+        <h1 style="text-decoration: underline; color: blue; text-align: center;">Lecture-15.(<em>Navigation Bars</em>)</h1>
+        <hr style="border-color: #f3c2c2; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-left: 50px; margin-right: 50px;">
+        <h2 style="text-decoration: underline; margin-left: 20px;">9.Small dropdown menu in horizontal navigation bar</h2>
+        <div class="extra">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

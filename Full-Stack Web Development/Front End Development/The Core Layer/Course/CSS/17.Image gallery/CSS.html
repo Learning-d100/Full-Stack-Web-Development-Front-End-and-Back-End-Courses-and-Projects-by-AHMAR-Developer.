@@ -1,0 +1,158 @@
+<!--
+        CSS Course:-
+                17.Image Gallery
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="Javascript.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Image Gallery
+        </title>
+        <!--Internal-CSS-->   
+        <style>
+            div.gallery{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            div.gallery-item{
+                margin: 5px;
+                border: 1px solid #ccc;
+                width: 180px;
+            }
+            div.gallery-item:hover{
+                border: 1px solid #777;
+            }
+            div.gallery-item img{
+                width: 100%;
+                height: auto;
+            }
+            div.gallery-item div.desc{
+                padding: 15px;
+                text-align: center;
+            }
+            /*Responsive*/
+            @media only screen and (max-width: 786px){
+                div.gallery-item{
+                    width: calc(50% - 20px);
+                }
+            }
+            @media only screen and (max-width: 480px){
+                div.gallery-item
+                {
+                    width: calc(50% - 20px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <hr style="border-color: red; box-shadow: 16px 0px 16px 0px red;">
+        <h1 style="color: red; text-align: center; text-decoration: underline;">CSS Course by AHMAR Developer.</h1>
+        <h1 style="text-align: center; color: blue; text-decoration: underline; text-shadow: 3px 3px  rgba(55, 0, 255, 0.2);">17.Image Gallery</h1>
+        <hr style="border-color: red; box-shadow: 16px 0px 16px 0px red;"><br>
+        <!--Image gallery-->
+        <div class="gallery">
+            <!--Image-1-->
+            <div class="gallery-item">
+                <a href="https://www.w3schools.com/css/img_5terre.jpg" target="_blank">
+                    <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+                <div class="desc">Cinque Terre</div>
+            </div>
+            <!--Image-2-->
+            <div class="gallery-item">
+                <a href="https://www.w3schools.com/css/img_forest.jpg" target="_blank">
+                    <img src="https://www.w3schools.com/css/img_forest.jpg" alt="Forest" width="600" height="400">
+                </a>
+                <div class="desc">Green Forest</div>
+            </div>
+            <!--Image-3-->
+            <div class="gallery-item">
+                <a href="https://www.w3schools.com/css/img_lights.jpg" target="_blank">
+                    <img src="https://www.w3schools.com/css/img_lights.jpg" alt="Northern Lights" width="600" height="400">
+                </a>
+                <div class="desc">Northern Lights</div>
+            </div>
+            <!--Image-4-->
+            <div class="gallery-item">
+                <a href="https://www.w3schools.com/css/img_mountains.jpg" target="_blank">
+                    <img src="https://www.w3schools.com/css/img_mountains.jpg" alt="Mountains" width="600" height="400">
+                </a>
+                <div class="desc">Mountains</div>
+            </div>
+            <!--Image-5-->
+            <div class="gallery-item">
+                <a href="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" target="_blank">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="White Flower" width="600" height="400">             
+                </a>
+                <div class="desc">White Flower</div>
+            </div>
+            <!--Image-6-->
+            <div class="gallery-item">
+                <a href="https://plus.unsplash.com/premium_photo-1661883991651-b5487771e9aa?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlJTIwd2F0ZXJmYWxsfGVufDB8fDB8fHww" target="_blank">
+                    <img src="https://plus.unsplash.com/premium_photo-1661883991651-b5487771e9aa?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlJTIwd2F0ZXJmYWxsfGVufDB8fDB8fHww" alt="Water Fall" width="600" height="400">
+                </a>
+                <div class="desc">Water Fall</div>
+            </div>
+            <!--Image-7-->
+            <div class="gallery-item">
+                <a href="https://images.stockcake.com/public/c/8/c/c8c325ce-88fe-4218-ad5a-600806169f0a_large/sunset-over-wilderness-stockcake.jpg" target="_blank">
+                    <img src="https://images.stockcake.com/public/c/8/c/c8c325ce-88fe-4218-ad5a-600806169f0a_large/sunset-over-wilderness-stockcake.jpg" alt="Sunset" width="600" height="400">
+                </a>
+                <div class="desc">Sunset</div>
+            </div>
+            <!--Image-8-->
+            <div class="gallery-item">
+                <a href="https://images.alphacoders.com/131/1311454.jpg" target="_blank">
+                    <img src="https://images.alphacoders.com/131/1311454.jpg" alt="Sunrise" width="600" height="400">
+                </a>
+                <div class="desc">Sunrise</div>
+            </div>
+            <!--Image-9-->
+            <div class="gallery-item">
+                <a href="https://sb.ecobnb.net/app/uploads/sites/3/2022/04/foresta-nera-870x490.jpg" target="_blank">
+                    <img src="https://sb.ecobnb.net/app/uploads/sites/3/2022/04/foresta-nera-870x490.jpg" alt="Waterfall in Forest" width="600" height="400">
+                </a>
+                <div class="desc">Waterfall in Forest</div>
+            </div>
+            <!--Image-10-->
+            <div class="gallery-item">
+                <a href="https://www.shutterstock.com/image-photo/ko-luang-waterfall-heart-shaped-600nw-2737181837.jpg" target="_blank">
+                    <img src="https://www.shutterstock.com/image-photo/ko-luang-waterfall-heart-shaped-600nw-2737181837.jpg" alt="Greenery" width="600" height="400">
+                </a>
+                <div class="desc">Greenery</div>
+            </div>
+            <!--Image-12-->
+            <div class="gallery-item">
+                <a href="https://images.pexels.com/photos/1662145/pexels-photo-1662145.jpeg" target="_blank">
+                    <img src="https://images.pexels.com/photos/1662145/pexels-photo-1662145.jpeg" alt="Natural" width="600" height="400">
+                </a>
+                <div class="desc">Natural</div>
+            </div>
+        </div>
+    </body>
+</html>
