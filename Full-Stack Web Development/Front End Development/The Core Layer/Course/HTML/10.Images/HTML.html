@@ -1,0 +1,92 @@
+<!--
+        HTML Course:-
+                10.image
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="Javascript.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Image
+        </title>  
+        <style>
+        footer{
+            background-image: url('https://www.w3schools.com/html/workplace.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: 100% 100%;
+            }
+</style>  
+    </head>
+    <body>
+        <hr><h1 style="text-align: center; color: red; text-decoration: underline;">HTML Course by Ahmar developer..</h1>
+        <h2 style="text-align: center; text-decoration: underline;">10.Image</h2>
+        <h3>1.Image(img tag)</h3>
+        <p>
+            (The HTML img tag is used to embed an image in a web page.<br>
+            Images are not technically inserted into a web page; images are linked to web pages.<br>
+            The img tag creates a holding space for the referenced image.<br>
+            The img tag is empty, it contains attributes only, and does not have a closing tag.<br>
+            The img tag has two required attributes:<br>
+            src - Specifies the path to the image<br>
+            alt - Specifies an alternate text for the image)
+        </p>
+        <img src="https://img.magnific.com/free-photo/closeup-shot-beautiful-butterfly-with-interesting-textures-orange-petaled-flower_181624-7640.jpg?semt=ais_hybrid&w=740&q=80" alt="Butterfly on twig of a tree" width="auto" height="auto"><hr>
+        <h3>2.Image Map</h3>
+        <p>(The HTML map tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more area tags.)</p>
+        <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+        </map><hr>
+        <h3>3.Background Image</h3>
+        <p>(To add a background image on an HTML element, use the HTML style attribute and the CSS background-image property:)</p>
+        <p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
+        <footer>
+            Html<br>
+            Cur(sr)<br>
+            js<br>
+        </footer><hr>
+        <h3>4.Pcture Element</h3>
+        <p>
+            (The HTML picture element gives web developers more flexibility in specifying image resources.<br>
+            The picture element contains one or more source elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.<br>
+            Each source element has a media attribute that defines when the image is the most suitable.)
+        </p>
+        <picture>
+            <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_food.jpg">
+            <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_food.jpg">
+            <img src="https://www.w3schools.com/html/img_food.jpg" style="width:auto;">
+        </picture>
+        <p>
+            Resize the browser to see different versions of the picture loading at different viewport sizes.<br>
+            The browser looks for the first source element where the media query matches the user's current viewport width,<br>
+            and fetches the image specified in the srcset attribute.
+        </p>
+        <p>
+            The img element is required as the last child tag of the picture declaration block.<br>
+            The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+        </p><hr>
+    </body>
+</html>

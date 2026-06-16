@@ -1,0 +1,119 @@
+<!--
+        HTML Course:-
+                14.Table
+--><!--Start-Coding-->
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="Javascript.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Table
+        </title>    
+        <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+</style>
+    </head>
+    <body>
+        <hr><h1 style="color: red; text-decoration: underline; text-align: center;">HTML Course by Ahmar Developer...</h1>
+        <h1 style="color: blue; text-align: center; text-decoration: underline;">14.Tables</h1><hr>
+        <h2 style="text-decoration: underline;">1.Basic Table. width border, size, header, padding, spacing, colspan, rowspan, styling</h2>
+        <table style="width: 100%; border: 1px solid black;">
+            <tr>
+                <th  colspan="2" style="border: 1px solid black;">Company</th>
+                <th style="border: 1px solid black;">Contact</th>
+                <th style="border: 1px solid black;">Country</th>
+            </tr>
+            <tr>
+                <td rowspan="2" style="border: 1px solid black;">Alfreds Futterkiste</td>
+                <td style="border: 1px solid black;">Maria Anders</td>
+                <td style="border: 1px solid black;">Germany</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black;">Centro comerical Moctezuma</td>
+                <td style="border: 1px solid black;">Francisco Chang</td>
+                <td style="border: 1px solid black;">Mexico</td>
+            </tr>
+        </table>
+        <h2>2.table Colgroup</h2>
+<p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+
+<table style="width: 100%;">
+<colgroup>
+  <col span="2" style="background-color: #D6EEEE">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+    </body>
+</html>
