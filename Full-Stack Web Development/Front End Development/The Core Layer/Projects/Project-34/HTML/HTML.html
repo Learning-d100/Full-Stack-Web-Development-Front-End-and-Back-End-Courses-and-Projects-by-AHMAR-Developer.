@@ -1,0 +1,140 @@
+<!--
+        Projects-34:-
+                    Random Password Generator
+--><!--Start-Coding-->
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link--> 
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link-->
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="../JAVASCRIPT/JAVASCRIPT.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../CSS/CSS.css">  
+        <title>
+            Random Password Generator
+        </title>    
+    </head>
+    <body>
+        <!--Main-Heading-->
+        <h1 class="title">Random Password Generator</h1>
+        <!--Main-->
+        <main>
+            <!--Container-->
+            <div class="container">
+                <!--Password-Section-->
+                <div class="pass-section">
+                    <!--Main-Password-Generator-Section-->
+                    <div class="pass-section-main">
+                        <!--Heading-->
+                        <p class="up-pass">Your Password:-</p>
+                        <!--Generated-Password-Display-->
+                        <div id="generated-pass">Click Generate Pass...</div>
+                        <!--Copy-Password-->
+                        <p id="copy">
+                            Click here to copy
+                            <!--Copied-Password-->
+                            <span id="copied" style="color: green; display: none;">
+                                : Copied :):
+                            </span>
+                        </p>
+                        <!--Password-Length-->
+                        <div id="custom-pass">
+                            <div>
+                                <!--Label-for-Password-Length-->
+                                <label for="pass-length">Password Length:-</label>
+                                <!--input-for-Password-Length-->
+                                <input type="number" id="pass-length-box" name="passLength" min="0" max="30" value="8">
+                                <!--Range-for-Password-Length-->
+                                <input type="range" id="pass-length-range" min="0" max="30" value="8">
+                            </div>
+                            <!--Check-Boxes-Inputs-->
+                            <div class="checkbox-inputs">
+                                <div>
+                                    <!--Include-Uppercase-Letters-->
+                                    <!--Label-for-Uppercase-Letters-->
+                                    <label for="uppercase">Uppercase</label>
+                                    <!--Input-for-Uppercase-Letters(Checkbox)-->
+                                    <input type="checkbox" class="check" name="uppercase" id="uppercase"><br>
+                                    <!--Label-for-Uppercase-Letters-->
+                                    <label for="lowercase">Lowercase</label>
+                                    <!--Input-for-Lowercase-Letters(Checkbox)-->
+                                    <input type="checkbox" class="check" name="lowercase" id="lowercase"><br>
+                                </div>
+                                <div>
+                                    <!--Include-Numbers-->
+                                    <!--Label-for-Numbers-->
+                                    <label for="numbers">Numbers</label>
+                                    <!--Input-for-Numbers(Checkbox)-->
+                                    <input type="checkbox" class="check" id="numbers" name="numbers"><br>
+                                    <!--Label-for-Symbols-->
+                                    <label for="symbols">Symbols</label>
+                                    <!--Input-for-Symbols(Checkbox)-->
+                                    <input type="checkbox" class="check" id="symbols" name="symbols"><br>
+                                </div>
+                            </div>
+                            <!--Warning-->
+                            <p id="warning" style="color: red; text-align: center; display: none;">
+                                at least check one checkbox...
+                            </p>
+                            <!--Generate-Password-Button-->
+                            <button id="generat-btn">Generate Password</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Tutorial-->
+                <div class="tutorial">
+                    <!--Logo-Image-->
+                    <img src="../IMAGES/lock.png" alt="Logo of a Secure Lock" class="lock-logo">
+                    <!--Strong-Password-Heading-->
+                    <p>
+                        <b>What is a Strong Password?</b>
+                    </p><br>
+                    <!--Strong-Password-Description-->
+                    <p>
+                        <!--Warning-->
+                        at least 15 characters<br>
+                        <!--Uppercase-Letters-->
+						uppercase letters<br>
+                        <!--Lowercase-Letters-->
+						lowercase letters<br>
+                        <!--Numbers-->
+						numbers<br>
+                        <!--Symbols-->
+						symbols, such as:<br>
+                        <!--Such-as-->
+						~! @#$%^&*<br>
+						()_-+={[}]<br>
+						|/:;<,>.?/<br>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <!--Copyright-->
+        <p class="copyright">
+            Created by <u>AHMAR</u> Developer from
+            <!--Link-->
+            <a href="https://github.com/Learning-d100/Full-Stack-Web-Development-Front-End-and-Back-End-Courses-and-Projects-by-AHMAR-Developer.">
+                @AHMAR Developer
+            </a>
+        </p>
+    </body>
+</html>
