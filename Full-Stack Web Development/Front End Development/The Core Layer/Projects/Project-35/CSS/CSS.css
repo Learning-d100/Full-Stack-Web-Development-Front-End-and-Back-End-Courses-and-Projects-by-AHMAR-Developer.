@@ -1,0 +1,150 @@
+/* Imports the 'Barlow' font family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Resets the margin and padding of all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* Body Styling */
+body{
+    background-color: #e8e8e8;
+    font-family: 'Barlow', sans-serif;
+}/* Project-Heading Styling */
+.prohead{
+    text-align: center;
+    font-size: 50px;
+    color: #000000;
+    font-size: 30px;
+}/* Project-Heading into Italic Styling */
+.prohead > i > u{
+    text-shadow: 0 1px 10px #5c5454;
+    color: red;
+    /* hover styling */
+    &:hover{
+        border-bottom: 3px solid black;
+        text-shadow: 0 0px 10px rgba(0, 0, 0, 0.99);
+    }
+}/* Title Styling */
+.title{ 
+    text-align: center; 
+	color: #4e4e4e;
+    border: 2px solid #4e4e4e;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin-left: 650px;
+    margin-right: 650px;
+    /* hover effect */
+    &:hover{
+        background-color: #4e4e4e;
+        color: #ffffff;
+        box-shadow: 0 0 0 0.30rem rgba(13, 110, 253, 0.25);
+        transition: all 0.5s ease-in-out;
+    }
+}/* Flexbox container to center the calculator on the page */
+#container{
+    display: flex;
+    justify-content: space-around;
+}/* Main Calculator body styled using Neumorphism (Soft UI) with inset & outset shadows */
+#calculator{
+    width: 350px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow internal elements to wrap onto next line */
+    border-radius: 20px;
+    background: linear-gradient(145deg, #d1d1d1, #f8f8f8);
+    box-shadow: 10px 10px 20px #cacaca, -10px -10px 20px #ffffff;
+    margin-top: 25px;
+}/* Display screen of calculator */
+.calc-box {
+	width: 90%;
+	min-height: 100px;
+	align-items: center;
+	margin-top: 20px;
+	border-radius: 10px 10px 0 0;
+	background: #e8e8e8;
+    /* Inset shadow creates a "sunken" look for the screen */
+	box-shadow: inset 7px 7px 14px #cccccc, inset -7px -7px 14px #ffffff;
+	color: #6e6e6e;
+	text-align: center;
+	padding-top: 40px;
+	font-size: 22px;
+}/* CSS hack to create a placeholder text ("Enter Number") when the editable div is empty */
+[contentEditable="true"]:empty:not(:focus):before {
+    content: attr(data-text);
+}/* Container for all the calculator buttons */
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background-color: transparent;
+    margin: 20px 0;
+}/* Standard button styling */
+.key {
+	width: 20%;
+	height: 65px;
+	border-radius: 14px;
+	background: #e8e8e8;
+    /* Outset shadow creates a "raised" look for the buttons */
+	box-shadow: 5px 5px 10px #d3d3d3, -5px -5px 10px #fdfdfd;
+	font-size: 25px;
+	text-align: center;
+	padding-top: 15px;
+	margin: 7px;
+	color: rgb(78, 78, 78);
+	cursor: pointer;
+	transition: background 0.3s;
+    /* hover styling */
+    &:hover{
+        background-color: #ffffff ;
+        box-shadow: 0 1px 1px white;
+    }
+}/* Simulates the button being pressed down */
+.key:active {
+	background: linear-gradient(145deg, #d1d1d1, #f8f8f8);
+}/* Special styling for operator buttons to distinguish them from numbers */
+.key.extra {
+	border-radius: 14px;
+	background: #121212;
+	color: #afafaf;
+    /* hover styling */
+    &:hover{
+        background-color: #412020;
+    }
+}/* active key for operator buttons styling */
+.key.extra:active {
+	background-color: #303030;
+}/* copyright styling */
+.copyright{
+    text-align: center ;
+    margin-top: 15px;
+    color: rgb(68,68,68);
+    /* underline styling */
+    u{
+        color: red;
+        font-weight: bold;
+    }/* link styling */
+    a{
+        text-decoration: none;
+        color: rgb(51, 0, 0);
+    }/* span styling */
+    span{
+        font-size: 12px;
+        text-decoration:  underline 3px rgba(247, 168, 20,0.4);
+    }
+}/* copyright-1 styling */
+.copyright-1{
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(68,68,68);
+    /* bold styling */
+    b{
+        font-size: 20px;
+        text-decoration:  underline 5px rgba(247, 168, 20,0.4);
+    }/* span styling */
+    span{
+        text-decoration:  underline 3px rgb(255, 0, 0);
+    }
+}
