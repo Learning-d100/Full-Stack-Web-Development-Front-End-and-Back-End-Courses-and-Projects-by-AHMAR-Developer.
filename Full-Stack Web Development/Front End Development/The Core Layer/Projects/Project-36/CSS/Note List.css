@@ -1,0 +1,194 @@
+/* Imports the 'Barlow' font from Google Fonts in light (300), regular (400), and medium (500) weights */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap");
+/* The universal selector (*) targets every single element on the page */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/* body styling */
+body {
+    font-family: "Barlow", sans-serif;
+    background-color: #e8e8e8;
+    color: rgb(65, 65, 65);
+}/* background */
+.background {
+    background: url(bg1.jpg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}/* main heading styling */
+h1 {
+    position: absolute;
+    top: 30%;
+    color: #d3d3d3;
+    font-size: 40px;
+}/* add buttons styling */
+#add-btn {
+    margin-bottom: -30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}/* enter button styling */
+.enter-btn {
+    border: none;
+    background-color: #43973c;
+    border-radius: 10px;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    padding: 20px 60px;
+    transition: 0.3s;
+    /* hover effect */
+    &:hover {
+        background-color: #58b150;
+    }
+}/* pop-up styling */
+#popups {
+    position: absolute;
+    top: 0;
+    z-index: 9; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}/* note pop-up styling */
+#newnote-popup {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+
+    box-shadow: 0 0 40px rgb(112, 112, 112);
+    position: relative;
+}/* note title and description styling */
+#newnote-title,
+#newnote-description {
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 8px;
+}/* description styling */
+#newnote-description {
+    min-height: 100px;
+    resize: vertical
+}/* nte pop up button */
+#newnote-popup button {
+    background-color: #43973c;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    /* hover effect */
+    &:hover {
+         background-color: #59b651;
+    }
+}/* close popup button styling */
+.close-popup-btn {
+    width: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}/* display todo note */
+#todo-note {
+    max-width: 1000px;
+    margin: 50px auto 0;
+}/* note list */
+.note-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}/* note into note list display */
+.note-list .note {
+    width: 45%;
+    max-height: 250px;
+    min-height: 150px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    overflow-y: auto;
+    transition: box-shadow 0.3s;
+    /* hover effect */
+    &:hover {
+        box-shadow: 0 0 10px rgb(189, 189, 189);
+    }
+}/* Customizes the look of the scrollbar for webkit browsers (Chrome, Safari, Edge) */
+.note-list .note::-webkit-scrollbar {
+    width: 5px;
+}/* Customizes the track (the background track the scrollbar moves in) */
+.note-list .note::-webkit-scrollbar-track {
+    background-color: rgb(230, 230, 230);
+    border-radius: 50px;
+}/* Customizes the thumb (the actual draggable part of the scrollbar) */
+.note-list .note::-webkit-scrollbar-thumb {
+    background-color: rgb(199, 199, 199);
+    border-radius: 50px;
+}/* note title */
+.note-list .note .note-title {
+    text-align: center;
+    background-color: rgb(236, 236, 236);
+    padding: 8px 0;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: rgb(88, 88, 88);
+    word-wrap: break-word;
+}/* text */
+.note-text {
+    word-wrap: break-word;
+    padding-bottom: 40px;
+}/* btns */
+.note-list .note-btns {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}/* buttons styling */
+.note-list button {
+    border: none;
+    padding: 5px 8px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #e93c3cd2;
+    transition: 0.3s;
+    /* hover effect */
+    &:hover {
+        background-color: #f05757d2;
+    }
+}/* note list image  */
+.note-list img {
+    width: 20px;
+}/* COPYRIGHT */
+.copyright {
+    text-align: center;
+    margin: 15px;
+    padding-bottom: 20px;
+    color: rgb(68, 68, 68);
+}/* back button */
+.back-btn {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}/* responsive displays */
+/* Media Query: Triggers these styles ONLY when the screen is 840 pixels wide or smaller (Tablets/Phones) */
+@media screen and (max-width: 840px) {
+    /* note-list into note */
+    .note-list .note {
+        width: 100%;
+        margin: 10px;
+    }
+}

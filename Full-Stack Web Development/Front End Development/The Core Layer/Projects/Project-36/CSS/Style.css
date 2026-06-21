@@ -1,0 +1,86 @@
+/* CSS BEGINS HERE. THIS bLOCK CONTROLS THE VISUAL APPEARANCE OF HTML ELEMENTS.
+*//* Import the 'barlow' font from Google Fonts in three weights: 300 (Light), 400 (Regular), and 500 (Medium) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
+/* Reset the margin and padding of all elements */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}/* body styling */
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-size: 100% 100%;
+    background-image: url(bg1.jpg);
+    background-size: 100% 100%;
+}/* header styling */
+header{
+    text-align: center;
+}/* Project-Heading(36) styling */
+.prohead{
+    font-size: 40px;
+    color: white;
+    margin-top: -250px;
+    margin-bottom: 50px;
+    /* underline styling */
+    u{
+        color: red;
+        border-bottom: 3px solid white;
+    }
+}/* Main-Heading styling */
+.prohead-1{
+    color: white;
+    font-size: 35px;
+    border: 2px solid white;
+    box-shadow: 0px 1px 10px white;
+    border-radius: 10px;
+}/* dashboard heading styling */
+h1{
+    margin-top: 30px;
+    color: white;
+    text-shadow: 0 1px 10px white;
+    margin-bottom: 50px;
+}/* button-container(link) styling */
+.btn-container{
+    display: flex;
+    gap: 20px;
+}/* Buttons(todo-list and note-list) styling */
+.nav-btn{
+    background-color: #43973c;
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    /* hover styling */
+    &:hover{
+        background-color: #58b150;
+        box-shadow: 0 1px 10px #43973c;
+    }
+}/* footer styling */
+footer{
+    margin-bottom: -200px;
+    color: white;
+    margin-top: 200px;
+    font-size: 20px;
+    /* link styling */
+    a{
+        color: red;
+        /* hover styling */
+        &:hover{
+            color: white;
+        }
+    }/* copyright styling */
+    .copyright{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}

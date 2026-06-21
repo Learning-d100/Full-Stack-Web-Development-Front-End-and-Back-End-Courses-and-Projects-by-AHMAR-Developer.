@@ -1,0 +1,175 @@
+/* Import the 'Barlow' font from Google Fonts in weights 300 (Light), 400 (Regular), and 500 (Medium) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
+/* Reset the margin and padding of all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* body styling */
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: #e8e8e8;
+    color: rgb(65, 65, 65);
+}/* background (container) styling */
+.background{
+    background: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}/* To-Do List Heading styling */
+h1{
+    position: absolute;
+    top: 30%;
+    color: #d3d3d3;
+    font-size: 40px;
+}/* add-button (todo-list) styling */
+#add-btn{
+    margin-bottom: -30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}/* add (Enter) Button styling */
+.enter-btn{
+    border: none;
+    background-color: #43973c;
+    border-radius: 10px;
+    font-size: larger;
+    color: white;
+    cursor: pointer;
+    padding: 20px 60px;
+    transition: 0.3s ease-in-out;
+    /* hover effect */
+    &:hover{
+        background-color: #58b150;
+    } 
+}/* Pop-ups styling */
+#popups{
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0, 0.5);
+}/* todo pop-up styling */
+#newtodo-popup{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    box-shadow: 0 0 40px rgb(112, 112, 112);
+    position: relative;
+}/* todo title label styling */
+#newtodo-title{
+    min-height: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px;
+}/* todo pop-up add button styling */
+#newtodo-popup button{
+    background-color: #43973c;
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* hover effect */
+    &:hover{
+        background-color: #59b651;
+    }
+}/* close popup button (todo) styling */
+.close-popup-btn{
+    width: 25px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}/* todo-note display styling */
+#todo-note{
+    max-width: 800px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+}/* todo (todo list) styling */
+.todo-list .todo{
+    min-height: 40px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s;
+    /* hover effect */
+    &:hover{
+        box-shadow: 0 0 10px rgb(189, 189, 189);
+    }
+}/* todo-list (todo) text styling */
+.todo-list .todo .todo-text{
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: 18px;
+}/* todo-list (todo) buttons styling */
+.todo-list .todo-btns{
+    position: absolute;
+    right: 0;
+    margin-right: 9px;
+}/* todo-list button */
+.todo-list button{
+    border: none;
+    padding: 5px 8px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
+}/* todo-list image styling */
+.todo-list img{
+    width: 20px;
+}/* todo-list done button styling */
+.todo-list .done-btn{
+    background-color: #44973ccb;
+    transition: 0.3s ease-in-out;
+    /* hover effect */
+    &:hover{
+        background-color: #6dc764cb;
+    }
+}/* todo-list delete button styling */
+.todo-list .delete-btn{
+    background-color: #e93c3cd2;
+    transition: 0.3s;
+    /* hover effect */
+    &:hover{
+        background-color: #f05757d2;
+    }
+}/* copyright styling */
+.copyright{
+    text-align: center;
+    margin: 15px;
+    padding-bottom: 20px;
+    color: rgb(68, 68, 68);
+}/* back to dashboard button styling */
+.back-btn{
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    /* hover effect */
+    &:hover{
+        background-color: #555;
+    }
+}
