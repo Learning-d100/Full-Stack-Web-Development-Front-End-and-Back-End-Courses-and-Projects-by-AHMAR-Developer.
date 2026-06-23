@@ -1,0 +1,161 @@
+/* Import Google font - 'Barlow' in following weights 300 (Light), 400 (Regular) and 500 (Medium) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
+/* Reset and Base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* body styling */
+body{
+    font-family: "Barlow", sans-serif;
+    color: rgb(87, 87, 87);
+    background-color: rgb(241, 248, 255);
+}/* header styling */
+header{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    min-height: 150px;
+    /* heading-title styling */
+    h1{
+        text-align: center;
+        padding-top: 50px;
+        color: white;
+    }
+}/* Main (Container) styling */
+main{
+    padding: 0 40px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}/* QUIz description heading styling */
+.quiz-description h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* quiz-description (descriptoion) styling */
+#descriptoion{
+    margin-bottom: 20px;
+}/* answer question styling */
+.answer-the-test{
+    text-align: center;
+}/* quiz meta styling */
+.quiz-meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}/* quiz time styling */
+.quiz-time{
+    display: flex;
+    /* image styling */
+    img{
+        width: 40px;
+        margin-top: -10px;
+    }
+}/* quiz countdown styling */
+.quiz-countdown{
+    margin-left: 10px;
+}/* questions styling */
+.question{
+    display: flex;
+    background-color: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(219, 244, 255);
+}/* question-answers styling */
+.question-answers{
+    display: flex;
+    flex-direction: column;
+}/* question-answers div styling */
+.question-answers div{
+    margin: 10px;
+}/* submit button styling */
+#submit-all{
+    display: flex;  
+    justify-content: center; 
+}/* submit-answers button styling */
+#submit-adswers{
+    padding: 20px;
+    margin: 0 0 50px;
+    margin-right: 25px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(108, 137, 231);
+    color: white;
+    cursor: pointer;
+    /* hover effect */
+    &:hover{
+        background-color: rgb(83, 107, 201);
+        font-size: 14px;
+        box-shadow: 1px 1px 5px 5px rgba(83, 107, 201, 0.5);
+    }
+}/* cancel-quiz button styling */
+#cancel-quiz{
+    margin-left: 25px;
+    padding: 20px;
+    margin: 0 0 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(238, 97, 97);
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    /* hover effect */
+    &:hover{
+        background-color: rgb(211, 83, 83);
+        font-size: 14px;
+        box-shadow: 1px 1px 5px 5px rgba(211, 83, 83, 0.5);
+    }
+}/* copyright styling */
+.copyright{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(114, 114, 114);
+    /* underline (u) styling */
+    u{
+        color: red; 
+    }/* github link styling */
+    a{
+        text-decoration: none;
+        color: rgb(36, 36, 36);
+        font-weight: 600;
+        /* hover styling */
+        &:hover{
+            color: red;
+            transition: 0.5s ease-in-out;
+            border-bottom: 2px solid red;
+        }
+        /* Icon styling */
+        i{
+            font-size: 20px;
+            color: black;
+            /* hover styling */
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}/* span styling */
+.span{
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: underline dotted;
+}/* copyright-1 styling */
+.copyright-1{
+    text-align: center; 
+    color: rgb(68,68,68); 
+    margin-top: 5px;
+    /* bold styling */
+    b{
+        font-size: 20px;
+        color: rgb(43, 37, 37);
+    }/* underline styling */
+    u{
+        color: red;
+    }/* italic styling */
+    i{
+        margin-top: 10px;
+        font-style: normal;
+    }
+}

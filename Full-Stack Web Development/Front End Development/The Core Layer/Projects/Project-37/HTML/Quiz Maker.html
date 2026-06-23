@@ -1,0 +1,127 @@
+<!--
+        Linked to Projects-37:-
+                    Quiz maker
+--><!--Start-Coding-->
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>  
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link--> 
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link--> 
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="../JAVASCRIPT/Quiz Maker.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../CSS/Quiz Maker.css">  
+        <title>
+            Quiz maker
+        </title>   
+    </head>
+    <body>
+        <!--Main-Heading-->
+        <h1 id="title">Quiz Maker</h1>
+        <!--Back-link (button)-->
+        <a id="goto-home-btn" href="index.html"><button>Back To Dashboard</button></a>
+        <!--Craete quiz-->
+        <div id="create-quiz">
+            <!--Heading-->
+            <h2>Create your Quiz</h2>
+            <!--Quiz form (create)-->
+            <form id="create-form">
+                <!--title-->
+                <label for="create-quiz-title">quiz title:</label>
+                <input type="text" id="create-quiz-title" name="title">
+                <!--DESCRIPTION-->
+                <label for="create-quiz-description">quiz description:</label>
+                <textarea name="description" id="create-quiz-description" cols="30" rows="5"></textarea>
+                <!--NUMBER OF QUESTIONS-->
+                <div class="numbers">
+                    <label for="create-quiz-count">how many questions:</label>
+                    <input type="number" id="create-quiz-count" name="count" min="0" /><br />
+                    <!--TIMEOUT-->
+                    <label for="create-quiz-timeout">quiz timeout (min):</label>
+                    <input type="number" id="create-quiz-timeout" name="count" min="0" />
+                </div>
+                <!--Questions-maker-->
+                <div id="question-maker">
+                    <!--Question (add)-->
+                    <label for="create-quiz-question">add your questions: 
+                        <span id="show-count" style="font-weight: bold; font-size: 25px">1.</span>
+                    </label>
+                    <input type="text" id="create-quiz-question" name="question" />
+                    <!--Answers-->
+                    <div class="answers">
+                        <!--Option-1-->
+                        <div>
+                            <label for="answer1">1.</label>
+                            <input id="answer1" class="options" type="text" name="1" />
+                        </div>
+                        <!--Option-2-->
+                        <div>
+                            <label for="answer2">2.</label>
+                            <input id="answer2" class="options" type="text" name="2" />
+                        </div>
+                        <!--Option-3-->
+                        <div>
+                            <label for="answer3">3.</label>
+                            <input id="answer3" class="options" type="text" name="3" />
+                        </div>
+                        <!--Option-4-->
+                        <div>
+                            <label for="answer4">4.</label>
+                            <input id="answer4" class="options" type="text" name="4" />
+                        </div>
+                    </div>
+                    <!--Correct-Answer heading-->
+                    <h3>which is the correct answer:</h3>
+                    <!--Correct-Answer-->
+                    <div class="correct-answer">
+                        <!--correct-1-->
+                        <label for="correct1">1.</label>
+                        <input type="radio" id="correct1" class="correctA" name="correct" />
+                        <!--correct-2-->
+                        <label for="correct2">2.</label>
+                        <input type="radio" id="correct2" class="correctA" name="correct" />
+                        <!--correct-3-->
+                        <label for="correct3">3.</label>
+                        <input type="radio" id="correct3" class="correctA" name="correct" />
+                        <!--correct-4-->
+                        <label for="correct4">4.</label>
+                        <input type="radio" id="correct4" class="correctA" name="correct" />
+                    </div>
+                    <!--Add question button-->
+                    <button id="question-add-btn">Add Question</button>
+                </div>
+                <!--Submit button-->
+                <button id="create-form-sumbit" type="submit">Submit the Quiz</button>
+            </form>
+        </div>
+        <!--Copyright-->
+        <div class="copyright">
+            Crated by <u>AHMAR</u> Developer from
+            <!--Link (Github (Icon))-->
+            <a href="https://github.com/learning-d100"><i class="fa-brands fa-github"></i>Github-Link &nbsp; <span
+                    class="span">(Click link to get github repository)</span></a>
+        </div>
+        <!--Copyright-1-->
+        <div class="copyright-1">
+            Copyright <b>&copy;</b> 2026 : <u>AHMAR</u> Developer <br> <i>All Right Reserved</i>
+        </div>
+    </body>
+</html>

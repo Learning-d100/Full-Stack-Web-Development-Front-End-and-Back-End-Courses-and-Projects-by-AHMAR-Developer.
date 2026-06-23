@@ -1,0 +1,213 @@
+/* Import Google font - 'Barlow' in following weights 300 (Light), 400 (Regular) and 500 (Medium) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
+/* Reset and Base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* body styling */
+body {
+	font-family: "Barlow", sans-serif;
+	color: rgb(65, 65, 65);
+	background-image: url(bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+}/* title styling */
+#title {
+	text-align: center;
+	margin-top: 40px;
+	color: rgb(0, 136, 255);
+}/* goto home link styling */
+#goto-home-btn {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: auto;
+	margin-top: 40px;
+	text-decoration: none;
+}/* goto home button button styling */
+#goto-home-btn button {
+	padding: 20px 50px;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	background-color: rgb(199, 226, 243);
+	color: rgb(87, 87, 87);
+	cursor: pointer;
+	transition: background 0.9s;
+    /* hover effect */
+    &:hover{
+        background-color: rgb(0, 162, 255);
+    color: white;
+    box-shadow: 0 4px 6px rgb(0, 162, 255);
+    }
+}/* create quiz styling */
+#create-quiz {
+	position: relative;
+	margin: auto;
+	margin-top: 40px;
+	background-color: white;
+	max-width: 80%;
+	max-height: 60%;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+}/* quiz scrollbar styling */
+#create-quiz::-webkit-scrollbar {
+	width: 10px;
+}/* quiz scrollbar track styling */
+#create-quiz::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 10px;
+	margin: 10px;
+}/* quiz scrollbar thumb styling */
+#create-quiz::-webkit-scrollbar-thumb {
+	background: rgb(183, 217, 233);
+	border-radius: 10px;
+    /* Hover effect */
+    &:hover{
+        background: rgb(153, 198, 219);
+    }
+}/* quiz heading styling */
+#create-quiz h2 {
+	text-align: center;
+	margin: 10px 0 5px;
+}/* quiz form styling */
+#create-form {
+	background-color: white;
+	border-radius: 15px;
+	margin: 0 10px 10px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}/* form label STYLING */
+#create-form label {
+	margin-bottom: 5px;
+}/* form input STYLING */
+#create-form input {
+	border: solid 1px rgb(214, 214, 214);
+	border-radius: 8px;
+	outline: none;
+	padding: 5px;
+}/* form textarea STYLING */
+#create-form textarea {
+	border: solid 1px rgb(214, 214, 214);
+	border-radius: 8px;
+	outline: none;
+	padding: 5px;
+	resize: none;
+}/* question maker  */
+#question-maker {
+	margin-top: 10px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}/* answer question styling */
+.answers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 10px;
+}/* numbers styling */
+.numbers {
+	margin-top: 20px;
+}/* numbers into count styling */
+.numbers #create-quiz-count {
+	width: 50px;
+}/* numbers into timeout styling */
+.numbers #create-quiz-timeout {
+	width: 50px;
+}/* correct answer */
+.correct-answer {
+	margin-bottom: 30px;
+}/* question maker button */
+#question-maker button {
+	width: 110px;
+	height: 50px;
+	border: none;
+	background-color: rgb(161, 69, 223);
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	margin: auto;
+	color: white;
+    /* hover effect */
+    &:hover{
+        background-color: rgb(0, 38, 255);
+        border-radius: 1px;
+        box-shadow: 0 0 20px 0px rgb(0, 38, 255);
+    }
+}/* form submit button styling */
+#create-form-sumbit {
+	width: 110px;
+	height: 50px;
+	border: none;
+	background-color: rgb(128, 147, 252);
+	border-radius: 10px;
+	cursor: pointer;
+	position: relative;
+	margin: auto;
+	margin-top: 30px;
+	color: white;
+    /* hover effect */
+    &:hover{
+        background-color: rgb(66, 86, 194);
+        border-radius: 1px;
+        box-shadow: 0 0 20px 0px rgb(0, 38, 255);
+    }
+}/* copy right */
+.copyright{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(114, 114, 114);
+    /* underline (u) styling */
+    u{
+        color: red; 
+    }/* github link styling */
+    a{
+        text-decoration: none;
+        color: rgb(36, 36, 36);
+        font-weight: 600;
+        /* hover styling */
+        &:hover{
+            color: red;
+            transition: 0.5s ease-in-out;
+            border-bottom: 2px solid red;
+        }
+        /* Icon styling */
+        i{
+            font-size: 20px;
+            color: black;
+            /* hover styling */
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}/* span styling */
+.span{
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: underline dotted;
+}/* copyright-1 styling */
+.copyright-1{
+    text-align: center; 
+    color: rgb(68,68,68); 
+    margin-top: 5px;
+    /* bold styling */
+    b{
+        font-size: 20px;
+        color: rgb(43, 37, 37);
+    }/* underline styling */
+    u{
+        color: red;
+    }/* italic styling */
+    i{
+        margin-top: 10px;
+        font-style: normal;
+    }
+}
