@@ -1,0 +1,149 @@
+/* Google Font 'Barlow' url */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Reset and Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* body styling */
+body{
+    font-family: 'Barlow', sans-serif;
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70%;
+    height: 100vh;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+}/* header styling */
+header{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    /* hover effect */
+    &:hover{
+        background-color: rgb(201, 201, 201);
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.05);
+        border-radius: 1px;
+    }
+    /* heading-1 styling */
+    h1{
+        padding-top: 40px;
+        color: rgb(48, 45, 45);
+        text-shadow: 0 0px 10px black;
+        /* underline (u) styling */
+        u{
+            color: red;
+        }
+    }/* heading-2 styling */
+    h2{
+        margin-top: 40px;
+        padding-bottom: 40px;
+        /* italic (i) styling */
+        i{
+            color: rgb(250, 224, 224);
+            text-shadow: 0 0px 10px black;
+            /* hover styling */
+            &:hover{
+                color: rgb(48, 45, 45);
+                text-shadow: 0 0px 10px black;
+                border-bottom: 3px solid rgb(48, 45, 45);
+                transition: all 0.4s ease-in-out;
+            }
+        }
+    }
+}/* main styling */
+main{
+    margin: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;
+    background-color: rgba(146, 146, 146, 0.25);
+    border-radius: 20px;
+    /* hover effect */
+    &:hover{
+        background-color: rgb(201, 201, 201);
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.04);
+        border-radius: 1px;
+    }
+    /* links */
+    a{
+        text-decoration: none;
+        color: rgb(48, 45, 45);
+        text-shadow: 0 0px 10px black;
+        /* button styling */
+        button{
+            margin: 50px 50px 50px 50px; 
+            background-color: red;
+            border: transparent solid 2px;
+            padding: 15px 20px;
+            color: white;
+            border-radius: 8px;
+            transition: all 0.5s ease-in-out;
+            /* hover styling */
+            &:hover{
+                background-color: #ccc;
+                color: black;
+                border: 2px solid red;
+                cursor: pointer;
+                transform: scale(1.10);
+                transition: 0.5s ease-in-out;
+                box-shadow: 0 0 10px rgba(2, 2, 2, 0.9);
+                font-size: 16px;
+            }
+        }
+    }
+}/* footer styling */
+footer{
+    padding: 20px 20px 20px 20px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    /* hover effect */
+    &:hover{
+        background-color: rgb(201, 201, 201);
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.03);
+        border-radius: 1px;
+    }
+}/* copyright styling */
+.copyright{
+    color: rgb(48, 45, 45);
+    font-weight: 600;
+    padding: 0 0 5px 0;
+    /* underline (u) styling */
+    u{
+        color: red;
+    }/* link styling */
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0px 10px black;
+        /* hover styling */
+        &:hover{
+            color: rgb(48, 45, 45);
+            text-shadow: 0 0px 10px black;
+            border-bottom: 2px solid rgb(48, 45, 45);
+            transition: all 0.4s ease-in-out;
+        }
+        /* icon styling */
+        i{
+            font-size: 20px;
+        }/* span styling */
+        span{
+            font-size: 13px;
+        }
+    }
+}/* copyright-1 styling */
+.copyright-1{
+    color: rgb(48, 45, 45);
+    font-weight: 600;
+    padding: 5px;
+    /* underline (u) styling */
+    u{
+        color: red;
+    }/* bold styling */
+    b{
+        font-size: 20px;
+    }
+}
