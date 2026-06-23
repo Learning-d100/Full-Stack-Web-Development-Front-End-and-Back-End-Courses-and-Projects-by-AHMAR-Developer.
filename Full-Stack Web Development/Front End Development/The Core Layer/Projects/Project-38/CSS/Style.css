@@ -1,0 +1,121 @@
+/* import google fonts - 'Barlow' */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;&display=swap');
+/* Reset and Base Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* body styling */
+body{
+    font-family: 'Barlow', sans-serif;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70%;
+    height: 100vh;
+}/* webkit scrollbar styling */
+::-webkit-scrollbar{
+    display: none;
+}/* title styling */
+.title{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0px 10px black;
+    text-align: center;
+    margin-top: 20px;
+}/* gameplay div styling */
+.gameplay-div{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    font-weight: bold;
+}/* player title styling */
+.player-title{
+    box-shadow: 0 0 10px black;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0, 0.568);
+    padding: 20px;
+}/* reset button styling */
+.reset-btn{
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(93, 19, 190);
+    cursor: pointer;
+}/* main (tic-tac-toe game) styling */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(177, 177, 177, 0.192);
+    height: 70%;
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}/* game-container */
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: minmax(auto, 100px);
+    gap: 5px;
+    text-align: center;
+}/* boxes */
+.boxes{
+    background-color: rgb(0, 0, 0, 0.774);
+    cursor: pointer
+}/* copyright styling */
+.copyright{
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(114, 114, 114);
+    /* underline (u) styling */
+    u{
+        color: red; 
+    }/* github link styling */
+    a{
+        text-decoration: none;
+        color: rgb(36, 36, 36);
+        font-weight: 600;
+        /* hover styling */
+        &:hover{
+            color: red;
+            transition: 0.5s ease-in-out;
+            border-bottom: 2px solid red;
+        }
+        /* Icon styling */
+        i{
+            font-size: 20px;
+            color: black;
+            /* hover styling */
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}/* span styling */
+.span{
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: underline dotted;
+}/* copyright-1 styling */
+.copyright-1{
+    text-align: center; 
+    color: rgb(68,68,68); 
+    margin-top: 5px;
+    /* bold styling */
+    b{
+        font-size: 20px;
+        color: rgb(43, 37, 37);
+    }/* underline styling */
+    u{
+        color: red;
+    }/* italic styling */
+    i{
+        margin-top: 10px;
+        font-style: normal;
+    }
+}
