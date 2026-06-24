@@ -1,0 +1,194 @@
+/* Import Google font - 'Barlow' in following weights 300 (Light), 400 (Regular) and 500 (Medium) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
+/* Reset and Base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* body styling */
+body{
+    font-family: 'Barlow', sans-serif;
+    background: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}/* header styling */
+header{
+    padding: 50px 50px 50px 50px;
+    backdrop-filter: blur(15px);
+    margin: 50px 50px 50px 50px;
+    box-shadow: 0 25px 45px rgba(99, 164, 167, 0.6);
+    border: 3px solid rgba(0, 225, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.733);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    /* hover effect */
+    &:hover{
+        border: 3px solid rgba(255, 255, 255, 0.733);
+        border-right: 3px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgba(0, 225, 255, 0.5);
+        box-shadow: 0 25px 45px rgba(255, 255, 255, 0.6);
+        transform: scale(1.008);
+    }/* Project - heading styling */
+    h1{
+        color: #ffffff;
+        font-size: 35px;
+        text-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+        /* underline (u) styling */
+        u{
+            color: red;
+        }
+    }/* Heading Styling */
+    h2{
+        color: #242424;
+        font-size: 25px;
+        text-shadow: 0 0px 10px rgb(255, 255, 255);
+        /* underline (u) styling */
+        u{
+            color: red;
+        }
+    }
+}/* arrow-icon styling */
+.icon{
+    font-size: 36px;
+    color: rgb(131, 126, 126);
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 750px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    /* hover effect */
+    &:hover{
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(0, 0, 0);
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.1);
+    }
+}/* main styling */
+main{
+    padding: 20px 20px 20px 20px;
+    backdrop-filter: blur(15px);
+    margin-right: 500px;
+    margin-left: 500px;
+    border: 3px solid rgba(255, 255, 255, 0.733);
+    border-right: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(0, 225, 255, 0.5);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.6);
+    /* hover effect */
+    &:hover{
+        box-shadow: 0 25px 45px rgba(99, 164, 167, 0.6);
+        border: 3px solid rgba(0, 225, 255, 0.5);
+        border-right: 3px solid rgba(255, 255, 255, 0.733);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        transform: scale(1.008);
+    }
+    /* description styling */
+    p{
+        color: white;
+        font-size: 18px;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }/* link styling */
+    a{
+        color: white;
+        font-size: 16px;
+        text-decoration: underline;
+        margin-bottom: 20px;
+        /* button styles */
+        button{
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            /* hover effect */
+            &:hover{
+                background-color: #4CAF50;
+                transition: all 0.5s ease-in-out;
+                transform: scale(1.05);
+            }/* focus styling */
+            &:focus{
+                background-color: #4CAF50;
+                transition: all 0.5s ease-in-out;
+                transform: scale(1.05);
+            }/* span styling */
+            span{
+                color: white;
+                font-size: 18px;
+                margin-left: 15px;
+            }
+            /* icon styling */
+            i{
+                color: white;
+                font-size: 25px;
+            }
+        }
+    }
+}/* footer styling */
+footer{
+    backdrop-filter: blur(15px);
+    margin: 50px 50px 50px 50px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 25px 45px rgba(99, 164, 167, 0.6);
+    border: 3px solid rgba(0, 225, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.733);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    /* hover effect */  
+    &:hover{
+        border: 3px solid rgba(255, 255, 255, 0.733);
+        border-right: 3px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgba(0, 225, 255, 0.5);
+        box-shadow: 0 25px 45px rgba(255, 255, 255, 0.6);
+        transform: scale(1.008);
+    }/* description styling */
+    p{
+        color: white;
+        font-size: 18px;
+        margin-bottom: 3px;
+        /* underline (u) styling */
+        u{
+            color: red;
+        }/* icon styling */
+        i{
+            font-size: 20px;
+        }/* link styling */
+        a{
+            text-decoration: none;
+            color: rgb(143, 133, 133);
+            font-weight: 600;
+            font-size: 20px;
+            /* hover effect */
+            &:hover{
+                color: rgb(0, 0, 0);
+                transition: all 0.5s ease-in-out;
+                border-bottom: 3px solid green;
+                color: green;
+            }/* focus styling */
+            &:focus{
+                color: rgb(0, 0, 0);
+                transition: all 0.5s ease-in-out;
+                border-bottom: 3px solid red;
+                color: red;
+            }
+        }
+    }/* article styling */
+    article{
+        color: white;
+        font-size: 16px;
+        /* symbol */
+        b{
+            font-size: 20px;
+        }/* underline (u) styling */
+        u{
+            color: red;
+        }
+    }/* section styling */
+    section{
+        color: white;
+        font-size: 15px;
+        font-style: italic;
+    }
+}
