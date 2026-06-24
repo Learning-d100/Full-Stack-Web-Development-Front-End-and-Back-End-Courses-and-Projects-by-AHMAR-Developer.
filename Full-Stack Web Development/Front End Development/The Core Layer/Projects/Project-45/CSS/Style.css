@@ -1,0 +1,227 @@
+/* Import Google font - 'Barlow' in following weights 300 (Light), 400 (Regular) and 500 (Medium) */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap');
+
+/* Reset and Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styling */
+body {
+    font-family: 'Barlow', sans-serif;
+    background: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+/* header styling */
+header {
+    padding: 50px 50px 50px 50px;
+    backdrop-filter: blur(15px);
+    margin: 50px 50px 50px 50px;
+    box-shadow: 0 25px 45px rgba(99, 164, 167, 0.6);
+    border: 3px solid rgba(0, 225, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.733);
+    border-bottom: 3px solid rgb(255, 255, 255);
+
+    /* hover effect */
+    &:hover {
+        border: 3px solid rgba(255, 255, 255, 0.733);
+        border-right: 3px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgba(0, 225, 255, 0.5);
+        box-shadow: 0 25px 45px rgba(255, 255, 255, 0.6);
+        transform: scale(1.008);
+    }
+
+    /* Project - heading styling */
+    h1 {
+        color: #ffffff;
+        font-size: 35px;
+        text-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+
+        /* underline (u) styling */
+        u {
+            color: red;
+        }
+    }
+
+    /* Heading Styling */
+    h2 {
+        color: #242424;
+        font-size: 25px;
+        text-shadow: 0 0px 10px rgb(255, 255, 255);
+
+        /* underline (u) styling */
+        u {
+            color: red;
+        }
+    }
+}
+
+/* footer styling */
+footer {
+    backdrop-filter: blur(15px);
+    margin: 50px 50px 50px 50px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 25px 45px rgba(99, 164, 167, 0.6);
+    border: 3px solid rgba(0, 225, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.733);
+    border-bottom: 3px solid rgb(255, 255, 255);
+
+    /* hover effect */
+    &:hover {
+        border: 3px solid rgba(255, 255, 255, 0.733);
+        border-right: 3px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgba(0, 225, 255, 0.5);
+        box-shadow: 0 25px 45px rgba(255, 255, 255, 0.6);
+        transform: scale(1.008);
+    }
+
+    /* description styling */
+    p {
+        color: white;
+        font-size: 18px;
+        margin-bottom: 3px;
+
+        /* underline (u) styling */
+        u {
+            color: red;
+        }
+
+        /* icon styling */
+        i {
+            font-size: 20px;
+        }
+
+        /* link styling */
+        a {
+            text-decoration: none;
+            color: rgb(143, 133, 133);
+            font-weight: 600;
+            font-size: 20px;
+
+            /* hover effect */
+            &:hover {
+                color: rgb(0, 0, 0);
+                transition: all 0.5s ease-in-out;
+                border-bottom: 3px solid green;
+                color: green;
+            }
+
+            /* focus styling */
+            &:focus {
+                color: rgb(0, 0, 0);
+                transition: all 0.5s ease-in-out;
+                border-bottom: 3px solid red;
+                color: red;
+            }
+        }
+    }
+
+    /* article styling */
+    article {
+        color: white;
+        font-size: 16px;
+
+        /* symbol */
+        b {
+            font-size: 20px;
+        }
+
+        /* underline (u) styling */
+        u {
+            color: red;
+        }
+    }
+
+    /* section styling */
+    section {
+        color: white;
+        font-size: 15px;
+        font-style: italic;
+    }
+}
+
+/* container styling */
+.container {
+    background: #55BAB9;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main styling */
+main {
+    backdrop-filter: blur(15px);
+    border: 3px solid rgba(255, 255, 255, 0.733);
+    border-right: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(0, 225, 255, 0.5);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.6);
+    margin: 50px 50px 50px 50px;
+
+    /* hover effect */
+    &:hover {
+        box-shadow: 0 25px 45px rgba(99, 164, 167, 0.6);
+        border: 3px solid rgba(0, 225, 255, 0.5);
+        border-right: 3px solid rgba(255, 255, 255, 0.733);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        transform: scale(1.008);
+    }
+
+    /* navbar styling */
+    nav {
+        background: #fff;
+        border-radius: 50px;
+        padding: 10px;
+        box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+
+        ul {
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 13px 35px;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: 500;
+                color: #777;
+                cursor: pointer;
+                position: relative;
+                z-index: 2;
+                transition: color 0.5s;
+
+                /* hover effect */
+                &:hover {
+                    color: #fff;
+
+                    &::after {
+                        top: 50%;
+                        opacity: 1;
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    background-color: #19978F;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: -1;
+                    opacity: 0;
+                    transition: top 0.5s, opacity 0.5s;
+                }
+            }
+        }
+    }
+}
