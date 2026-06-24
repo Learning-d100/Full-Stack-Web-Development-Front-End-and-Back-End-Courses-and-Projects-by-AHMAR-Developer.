@@ -1,0 +1,174 @@
+/* Import Google font - Poppins url */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* Reset and Base styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/* body styling */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url(bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+}/* header styling */
+header{
+    background-color: rgb(236, 231, 231);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+    /* heading styling */
+    h1{
+        color: #cac7c7;
+        text-align: center;
+        text-shadow: 0 10px 10px rgba(0,0,0,0.99);
+    }
+}/* heading styling */
+.h {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 4px;
+    color: #555;
+    text-align: center;
+    margin-top: 100px;
+}/* main styling */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+    padding: 20px 20px 20px 20px;
+    backdrop-filter: blur(25px);
+    border: 3px solid rgba(255, 255, 255, 0.733);
+    border-right: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgba(0, 225, 255, 0.5);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.6);
+    /* hover effect */
+    &:hover{
+        box-shadow: 0 25px 45px rgba(99, 164, 167, 0.6);
+        border: 3px solid rgba(0, 225, 255, 0.5);
+        border-right: 3px solid rgba(255, 255, 255, 0.733);
+        border-bottom: 3px solid rgb(255, 255, 255);
+        transform: scale(1.009);
+    }/* social-media icons */
+    div{
+        display: flex;
+        justify-content: center;
+        /* link styling */
+        a {
+            display: flex;
+            background: #e3edf7;
+            height: 75px;
+            width: 75px;
+            margin: 0 15px;
+            border-radius: 8px;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(0, 0, 0, 0);
+            transition: transform 0.5s;
+            /* icon styling */
+            i{
+                font-size: 35px;
+                color: #777;
+                transition: transform 0.5s;
+            }/* hover effect */
+            &:hover{
+                    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+                    border: 1px solid rgba(0, 0, 0, 0.01);
+                    transform: translateY(-5px);
+                    /* icon hover effect */
+                    i{
+                        transform: scale(1.2);
+                    }/* facebook icon */
+                    .fa-facebook{
+                        color: #3b5998;
+                    }/* twitter icon */
+                    .fa-twitter{
+                        color: #1da1f2;
+                    }/* linkedin icon */
+                    .fa-linkedin{
+                        color: #0077b5;
+                    }/* github icon */
+                    .fa-github{
+                        color: #333;
+                    }/* youtube icon */
+                    .fa-youtube{
+                        color: #ff0000;
+                    }
+                }
+            }
+        }
+    }/* footer styling */
+footer{
+    backdrop-filter: blur(15px);
+    margin: 50px 50px 50px 50px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0 25px 45px rgba(99, 164, 167, 0.6);
+    border: 3px solid rgba(0, 225, 255, 0.5);
+    border-right: 3px solid rgba(255, 255, 255, 0.733);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    /* hover effect */  
+    &:hover{
+        border: 3px solid rgba(255, 255, 255, 0.733);
+        border-right: 3px solid rgb(255, 255, 255);
+        border-bottom: 3px solid rgba(0, 225, 255, 0.5);
+        box-shadow: 0 25px 45px rgba(255, 255, 255, 0.6);
+        transform: scale(1.008);
+    }/* description styling */
+    p{
+        color: white;
+        font-size: 18px;
+        margin-bottom: 3px;
+        /* underline (u) styling */
+        u{
+            color: red;
+        }/* icon styling */
+        i{
+            font-size: 20px;
+        }/* link styling */
+        a{
+            text-decoration: none;
+            color: rgb(143, 133, 133);
+            font-weight: 600;
+            font-size: 20px;
+            /* hover effect */
+            &:hover{
+                color: rgb(0, 0, 0);
+                transition: all 0.5s ease-in-out;
+                border-bottom: 3px solid green;
+                color: green;
+            }/* focus styling */
+            &:focus{
+                color: rgb(0, 0, 0);
+                transition: all 0.5s ease-in-out;
+                border-bottom: 3px solid red;
+                color: red;
+            }
+        }
+    }/* article styling */
+    article{
+        color: white;
+        font-size: 16px;
+        /* symbol */
+        b{
+            font-size: 20px;
+        }/* underline (u) styling */
+        u{
+            color: red;
+        }
+    }/* section styling */
+    section{
+        color: white;
+        font-size: 15px;
+        font-style: italic;
+    }
+}
