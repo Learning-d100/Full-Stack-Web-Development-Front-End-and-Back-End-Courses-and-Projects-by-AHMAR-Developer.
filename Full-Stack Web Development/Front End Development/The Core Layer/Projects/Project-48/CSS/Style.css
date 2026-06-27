@@ -1,0 +1,226 @@
+/* Reset and Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body styling */
+body {
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+}
+/* header styling */
+header {
+    background-color: #eee3e3;
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+    /* heading styling */
+    h1 {
+        font-size: 40px;
+        color: #333;
+        /* underline (u) styling */
+        u {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            color:  red;
+        }
+        /* span styling */
+        span {
+            font-size: 30px;
+            border-bottom: 3px solid red;
+            color: rgb(175, 171, 171);
+        }
+    }
+}
+/* Icon section (down-arrow) */
+.section {
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    width: 73px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 750px;
+    margin-right: 7500px;
+    margin-top: 30px;
+	margin-bottom: 30px;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.4);
+    border: 5px solid #b0f1fa;
+    border-right: 5px solid #fab0b0;
+    border-bottom: 5px solid #fab0b0;
+    /* icon styling */
+    i {
+        font-size: 35px;
+        color: #fff;
+        /* hover effect */
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}
+/* main styling */
+main {
+    margin: 20px 20px 20px 20px;
+    padding: 60px 60px 60px 60px;
+    text-align: center ;
+    align-content: center;
+    box-shadow: inset 5px 5px 30px rgba(0,0,0,0.9);
+    border: 5px solid #b0f1fa;
+    border-bottom: 5px solid #fab0b0;
+    border-right: 5px solid #fab0b0;
+    /* hover effect */
+    &:hover {
+        border: 5px solid #fab0b0;
+        border-bottom: 5px solid #b0f1fa;
+        border-right: 5px solid #b0f1fa;
+    }
+    /* heading styling */
+    h1 {
+        margin: 30px 0;
+        font-weight: 900;
+        letter-spacing: 3px;
+        font-size: 3rem;
+        color: #66fcf1;
+        text-shadow: 3px 3px 1px #d4a0a0;
+    }
+}
+/* Fluid CSS Grid for Images */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 24px;
+    max-width: 1400px;
+    width: 100%;
+    padding: 10px;
+}
+/* Card container holding image and author info */
+.img-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: #1f2833;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+    height: 380px;
+    /* hover effect */
+    &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 35px rgba(102, 252, 241, 0.2);
+        border: 2px solid red;   
+        border-radius: 0px;
+        transition: all 0.5s ease-in-out;
+    }
+    /* image styling */
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+        /* hover effect */
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+/* Overlay text for Author */
+.author-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    padding: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+/* image card and author */
+.img-card:hover .author-overlay {
+    opacity: 1;
+}
+
+/* CSS Loading Animation */
+#loader {
+    margin: 60px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #2f00ff;
+    border-radius: 50%;
+    animation: spin 1s cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite;
+}
+/* spinner animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Footer */
+footer {
+	margin-top: 72px;
+    text-align: center;
+    background-color: #ece7e7;
+    padding: 20px 20px 20px 20px;
+    /* paragraph styling */
+    p {
+        font-weight: 900;
+        letter-spacing: 3px;
+        font-size: 15px;
+        color: #353131;
+        text-shadow: 3px 3px 1px #d4a0a0;
+        /* underline (u) styling */
+        u {
+            color: red;
+        }
+        /* icon styling */
+        i {
+            font-size: 20px;
+            color: black;
+        }
+        /* link styling */
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0px 10px black;
+            /* hover styling */
+            &:hover {
+                color: rgb(48, 45, 45);
+                text-shadow: 0 0px 10px black;
+                text-decoration: underline;
+            }
+        }
+    }
+    /* article styling */
+    article {
+        font-weight: 900;
+        letter-spacing: 3px;
+        font-size: 15px;
+        color: #353131;
+        text-shadow: 3px 3px 1px #d4a0a0;
+        /* bold styling */
+        b {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0px 10px black;
+        }
+        /* underline (u) styling */
+        u {
+            color: red;
+        }
+    }
+    /* section */
+    section {
+        font-weight: 900;
+        letter-spacing: 3px;
+        font-size: 15px;
+        color: #353131;
+        text-shadow: 3px 3px 1px #d4a0a0;
+    }
+}
