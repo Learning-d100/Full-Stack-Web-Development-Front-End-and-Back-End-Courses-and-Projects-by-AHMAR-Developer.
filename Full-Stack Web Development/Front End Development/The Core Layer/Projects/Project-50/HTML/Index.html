@@ -1,0 +1,140 @@
+<!--
+        Projects-50:-
+                    Light/Dark Mode Webpage
+--><!--Start-Coding-->
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>  
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--favicon-->
+        <link rel="icon" type="image/jpg" sizes="32x32" href="../FAVICON/pngtree-dark-mode-icon-light-png-clipart-png-image_3811921.jpg">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link--> 
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="../JAVASCRIPT/Script.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <title>
+            Light/Dark Mode Webpage
+        </title>   
+    </head>
+    <body>
+        <!--Dark-Mode-Switch-->
+        <div class="theme-switch-wrapper">
+            <!--Icon (Dark-Light-Mode)-->
+            <span id="toggle-icon">
+                <!--Light-Mode-->
+                <span id="toggle-text">Light Mode</span>
+                <!--Icon (Light)-->
+                <i class="fa-solid fa-sun"></i>
+            </span>
+            <!--Label (Theme-Switch)-->
+            <label class="theme-switch">
+                <!--CheckBox (Input)-->
+                <input type="checkbox">
+                <!--Slider (Theme (Light and Dark))-->
+                <div class="slider round"></div>
+            </label>    
+        </div>
+        <!--Navigation-->
+        <nav id="nav">
+            <!--Four-Links (Home, About, Projects and Contact)-->
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <!--Home-Section-->
+        <section id="home">
+            <!---Group-Title-->
+            <div class="title-group">
+                <!--Heading-->
+                <h1>Custom Title Here</h1>
+                <!--Main-Heading-->
+                <h2>Welcome to Light/Dark Mode Webpage</h2>
+            </div>
+        </section>
+        <!--About-Section-->
+        <section id="about">
+            <!---Main-Heading-->
+            <h1>Undraw Illustrations</h1>
+            <!--About-Container-->
+            <div class="about-container">
+                <!--Image-Container-1-->
+                <div class="image-container">
+                    <!--Image-Heading-->
+                    <h2>Web Innovation</h2>
+                    <!--Image (Web)-->
+                    <img src="../IMAGES/undraw_proud_coder_light.svg" alt="Proud Coder" id="image1">
+                </div>
+                <!--Image-Container-2-->
+                <div class="image-container">
+                    <!--Image-Heading-->
+                    <h2>Problem Solving</h2>
+                    <!--Image (Problem Solving)-->
+                    <img src="../IMAGES/undraw_feeling_proud_light.svg" alt="Feeling Proud" id="image2">
+                </div>
+                <!--Image-Container-3-->
+                <div class="image-container">
+                    <!--Image-Heading-->
+                    <h2>High Concept</h2>
+                    <!--Image (High Concept)-->
+                    <img src="../IMAGES/undraw_conceptual_idea_light.svg" alt="Conceptual Idea" id="image3">
+                </div>
+            </div>
+        </section>
+        <!--Projects-Section-->
+        <section id="projects">
+            <!--Button-Heading-->
+            <h1>Buttons</h1>
+            <!--Buttons-->
+            <div class="buttons">
+                <!--6-Buttons (Primary, Secondary, Disabled, Outline, Alt Outline, Disabled)-->
+                <button class="primary">Primary</button>
+                <button class="second">Secondary</button>
+                <button class="primary" disabled>Disabled</button>
+                <button class="outline">Outline</button>
+                <button class="second outline">Alt Outline</button>
+                <button class="outline" disabled>Disabled</button>
+            </div>
+            <!--Text-Box-->
+            <div class="text-box" id="text-box">
+                <!--Paragraph-->
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sequi doloribus quisquam quod asperiores nesciunt consectetur tenetur, nostrum excepturi ea ipsa illo sed dolores delectus inventore fuga deserunt placeat voluptatum.
+                </p>
+            </div>
+        </section>
+        <!--Contact-Section-->
+        <section id="contact">
+            <!--Social-Icons-->
+            <div class="social-icons">
+                <!--6-Social-Icons (Github, Codepen, Linkedin, Medium, Instagram, Youtube)-->
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-codepen"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-medium"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </section>
+    </body>
+</html>

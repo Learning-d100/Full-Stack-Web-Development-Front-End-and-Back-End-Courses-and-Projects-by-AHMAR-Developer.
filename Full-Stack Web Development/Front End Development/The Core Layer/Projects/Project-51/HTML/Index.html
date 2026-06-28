@@ -1,0 +1,82 @@
+<!--
+        Projects-51:-
+                    Custom count down
+--><!--Start-Coding-->
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>  
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link--> 
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!--Link Javascript-->
+        <script defer src="../JAVASCRIPT/Script.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <title>
+            Custom Count down
+        </title>   
+    </head>
+    <body>
+        <!-- Video Background -->
+    <video class="video-background" muted loop autoplay>
+      <source src="../VIDEO/time.mp4" />
+    </video>
+    <!-- Video Overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- container -->
+    <div class="container">
+      <!-- Input -->
+      <div class="input-container">
+        <h1>Create a Custom Countdown!</h1>
+        <form class="form" id="countdownForm" >
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="What are you counting down to?"
+            required
+          />
+          <label for="date-picker"> Select a Date</label>
+          <input type="date" id="date-picker" required/>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!-- Countdown -->
+      <div class="countdown-container" hidden>
+        <h1 id="countdown-title">Countdown Title Here</h1>
+        <ul>
+          <li><span></span>Days</li>
+          <li><span></span>Hours</li>
+          <li><span></span>Minutes</li>
+          <li><span></span>Seconds</li>
+        </ul>
+        <button id="countdown-button">Reset</button>
+      </div>
+      <div class="complete-container" hidden>
+        <h1 id="complete-title">Complete Countdown!</h1>
+        <h1 id="complete-info"></h1>
+        <button id="complete-button">New Countdown</button>
+      </div>
+    </div>
+
+    </body>
+</html>
