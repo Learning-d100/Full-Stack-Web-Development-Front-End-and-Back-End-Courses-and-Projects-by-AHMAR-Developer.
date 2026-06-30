@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white; */
+}
+
+body {
+    height: 100vh;
+    background: #161513;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 45px;
+}
+
+.navbar img {
+    height: 70px;
+    width: 100px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-connect {
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 20px;
+
+}
+
+.product {
+    height: 400px;
+    margin: 40px;
+    border: 1px solid white;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+
+}
+
+.product-image1 {
+    background-image: url('../IMAGES/image1.png');
+    height: 200px;
+    background-size: cover;
+
+}
+
+.product-image2 {
+    background-image: url('../IMAGES/image2.png');
+    height: 200px;
+    background-size: cover;
+
+}
+
+.product-image3 {
+    background-image: url('../IMAGES/image3.png');
+    height: 200px;
+    background-size: cover;
+
+}
+
+.product-image4 {
+    background-image: url('../IMAGES/image4.png');
+    height: 200px;
+    background-size: cover;
+
+}
+
+
+.about-product {
+    padding: 5px;
+}
+
+.about-product h3 {
+    font-size: larger;
+}
+
+.about-product p {
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #450556;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0px;
+
+}
+
+button {
+    margin: 5px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 19px;
+    cursor: pointer;
+
+
+}
+
+#cart {
+    background-color: #fff;
+    border: 2px solid #da7c25;
+}
+
+#buy {
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1);
+    font-weight: bold;
+    color: #fff;
+}
+
+#buy:hover {
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: 0.2s ease-in;
+}
+
+#cart:hover {
+    background-color: #000;
+    color: #fff;
+}
