@@ -1,0 +1,340 @@
+/* Import Google Fonts - 'Poppins' URL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+/* Reset and Base Styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select:none;
+}
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #121214, #080808);
+  color: #fff;
+}
+/* Header Styling */
+header {
+    display: flex;
+    /* Motional Image Styling */
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    /* Heading Styling */
+    h1 {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        /* Hover Effect */
+        &:hover {
+            cursor: pointer;
+            border-bottom: 3px solid rgb(255, 255, 255);
+        }
+    }
+    /* Un-Ordered List Styling */
+    ul {
+        display: flex;
+        margin-left: 645px;
+        margin-top: 30px;
+        text-decoration: none;
+        list-style: none;
+        /* List Item Styling */
+        li {
+            list-style: none;
+            text-decoration: none;
+            margin-right: 30px;
+            font-size: 20px;
+            /* Link Styling */
+            a {
+                text-decoration: none;
+                color: #fff;
+                /* Hover Effect */
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 3px solid rgb(255, 255, 255);
+                }
+                /* Icon styling */
+                i {
+                    margin-right: 10px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+/* Facebook-Icon Styling */
+.fa-facebook {
+    color: #3456a1;
+}
+/* Twitter-Icon Styling */
+.fa-twitter {
+    color: #1da1f2;
+}
+/* Linkedin-Icon Styling */
+.fa-linkedin {
+    color: #0077b5;
+}
+/* Github-Icon Styling */
+.fa-github {
+    color: #333;
+}
+/* Heading Styling */
+.heading {
+    text-align: center;
+    background: #7979ff;
+    margin: 20px 20px 20px 20px;
+    font-size: 40px;
+    text-decoration: underline;
+    text-shadow: 0 0px 20px black;
+}
+/* Main (Body) Styling */
+main {
+    background: #1b1b1d;
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+}
+/* Movie-Container Styling */
+#movieContainer {
+    border: 1px groove rgb(166, 7, 177);
+    margin: 40px 5px;
+    border-radius: 10px;
+}
+/* Movie-Parent Styling */
+.movieParent {
+    background: linear-gradient(200deg, rgb(161, 6, 161), rgb(16, 16, 16));
+    width: 220px;
+    margin: 20px;
+    border: 2px solid rgb(212, 11, 212);
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 0px 5px white;
+    transition: transform 0.3s ease;
+    /* Hover Effect */
+    &:hover {
+        background: linear-gradient(270deg, rgb(161, 6, 161), rgb(16, 16, 16));
+        transform: scale(1.01);
+    }
+}
+/* Head of Movie Parent Styling */
+.movieParent .head {
+    height: 100px;
+    display: none;
+}
+/* Body of Movie Parent Styling */
+.movieParent .body {
+    padding: 20px;
+}
+/* Name Styling */
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    height: 100px;
+    width: 100%;
+}
+/* lead Styling */
+.lead {
+    font-size: 1.2rem;
+    color: #ead085;
+    margin-block-end: 10px;
+}
+/* Collections Styling */
+.collection {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #9e91ee;
+}
+/* Movie Parent Action Styling */
+.movieParent .action {
+    width: 100% !important;
+    margin-block: 20px;
+    display: flex;
+    gap: 10px;
+    padding-inline: 20px;
+}
+/* Movie Parent Action Button Styling */
+.movieParent .action button {
+    width: 50%;
+    padding: 8px;
+    border: 1.5px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+    font-size: 0.9rem;
+    /* Hover Effect */
+    &:hover {
+        background-color: #BC2ACF;
+    }
+}
+/* form section styling */
+.add-movie-form {
+    border: 1px solid rgb(198, 194, 194);
+    border-radius: 8px;
+    padding: 40px;
+    margin: 10px 5px;
+}
+/* Add form main styling */
+.add-movie-form .main {
+
+    display: flex;
+    gap: 20px;
+}
+/* Error box styling */
+.error-box {
+    margin-block: 10px;
+    padding: 10px;
+    text-align: center;
+    color: red;
+    display: none;
+}
+/* pop-up Container */
+.pop-up-container {
+    border: 2px solid #a624b7;
+    border-radius: 10px;
+    background-color: #1f0128;
+    position: fixed;
+    inset: 150px;
+    z-index: 1010;
+    padding: 20px;
+    width: 40%;
+    height: fit-content;
+    margin-inline: auto;
+    display: none;
+}
+/* Hidden by default */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+/* Show overlay */
+.overlay.active {
+    display: flex;
+}
+/* Close Button Container Styling */
+.close-btn-container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+/* close button Container SVG styling */
+.close-btn-container svg {
+    cursor: pointer;
+}
+/* Edit From Styling */
+.edit-form {
+    padding: 10px 20px;
+}
+/* Edit Form Heading Styling */
+.edit-form h2 {
+    text-align: center;
+    margin-block-end: 20px;
+}
+/* Edit Form Body Styling */
+.edit-form .form-body {
+    display: flex;
+    flex-direction: column;
+}
+/* Edit form body input field styling */
+.edit-form .form-body input {
+    margin-block-end: 15px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid #a624b7;
+    border-radius: 8px;
+    color: white;
+}
+/* Edit from error styling */
+.edit-from-error {
+    color: rgb(190, 5, 5);
+    display: none;
+}
+/* pop-up-button-container Styling */
+.pop-up-btn-container {
+    margin-block-start: 10px;
+    display: flex;
+    gap: 20px;
+}
+/* pop-up-btn-container button Styling */
+.pop-up-btn-container button {
+    width: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s linear;
+    font-size: 18px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    /* Hover Effect */
+    &:hover {
+        background-color: #9608a0;
+        color: #d7e1ff;
+    }
+}
+/* Add Movie Form input styling */
+.add-movie-form input {
+    padding: 15px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 8px;
+    border: 1.5px solid #F9D0FE;
+    color: white;
+    font-size: 1rem;
+    transition: .2s linear;
+    /* Hover Effect */
+    &:hover {
+        border-color: #a624b7;
+        box-shadow: 0px 0px 10px #4A1152;
+    }
+    /* Placeholder styling for input */
+    &::placeholder {
+        color: lightgray;
+    }
+}
+/* Add movie Styling */
+#addmovie {
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: #483AA0;
+    color: white;
+    outline: none;
+    border: 2px solid #483AA0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    /* Hover Effect */
+    &:hover {
+        background-color: #3c2d9a;
+    }
+}
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    /* Copyright styling */
+    b {
+        font-size: 25px;
+    }
+    /* Span styling */
+    span {
+        color: #a624b7;
+    }
+    /* Underline styling */
+    u {
+        color: red;
+    }
+}

@@ -1,0 +1,131 @@
+<!--
+        Projects-55:-
+                   Movie Box Collection
+--><!--Start-Coding-->
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>  
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Favicon-->
+        <link rel="icon" type="images/png" href="../FAVICON/wired-gradient-1383-sphere-loop-rotate.png">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Animate-on-scroll CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link--> 
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css" />
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!-- Animate-on-scroll Javascript-- -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <!--Link Javascript-->
+        <script defer src="../JAVASCRIPT/Script.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <title>
+            Movie Box Collection
+        </title>   
+    </head>
+    <body>
+        <!--Header-->
+        <header>
+            <!--Motional-Image-->
+            <img data-aos="zoom-in-left" src="../MOTIONAL IMAGES/Loading Lottie animation.svg" alt="Motional Image">
+            <!--Heading-->
+            <h1 data-aos="zoom-in-up">Ahmar's Designe</h1>
+            <!--Un-Ordered-List-->
+            <ul data-aos="zoom-in-right">
+                <!--List-Item-1 (Link-Facebook (Icon))-->
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                <!--List-Item-2 (LinkInstagram (Icon))-->
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                <!--List-Item-3 (Link-Twitter (Icon))-->
+                <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i>Github</a></li>
+                <!--List-Item-4 (Link-Linkedin (Icon))-->
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+            </ul>
+        </header>
+        <!--Heading-->
+        <h1 data-aos="zoom-in-down" class="heading">MOVIE BOX COLLECTION</h1>
+        <!--Main-->
+        <main data-aos="zoom-in">
+            <!--Add-Movie-Form-->
+            <form data-aos="zoom-in" class="add-movie-form">
+                <!--Main-->
+                <div data-aos="zoom-in" data-aos="fade-down" class="main">
+                    <!--Movie-Name Input-Field-->
+                    <input data-aos="zoom-in" type="text" placeholder="Movie Name" id="name">
+                    <!--Movie-Lead Input-Field-->
+                    <input data-aos="zoom-in" type="text" placeholder="Movie Lead" id="lead">
+                    <!--Movie-Collection Input-Field-->
+                    <input data-aos="zoom-in" type="text" placeholder="Movie Collection" id="collection">
+                    <!--Add-Movie-button-->
+                    <button data-aos="fade-up" id="addmovie">Add Movie</button>
+                </div>
+                <!--Error-Box-->
+                <div data-aos="fade-up" class="error-box">Error</div>
+            </form>
+            <!--Movie-Container-->
+            <div data-aos="zoom-in" id="movieContainer"></div>
+            <!--Overlay-->
+            <div data-aos="zoom-in" class="overlay" id="overlay"></div>
+            <!--Pop-Up-Container-->
+            <div data-aos="zoom-in" class="pop-up-container">
+                <!--Close-Button-Container (Section)-->
+                <section data-aos="zoom-in" class="close-btn-container">
+                    <!--SVG-->
+                    <svg data-aos="zoom-in" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+                        <!--G-->
+                        <g data-aos="zoom-in" fill="none">
+                            <!--Circle-->
+                            <circle data-aos="zoom-in" cx="12" cy="12" r="9" fill="currentColor" fill-opacity="0.25">
+                            <!--Path-->
+                            <path data-aos="zoom-in" stroke="currentColor" stroke-linecap="round" stroke-width="1.2" d="m9 916 6m0-61-6 6">
+                        </g>
+                    </svg>
+                </section>
+                <!--Edit-Form-->
+                <form data-aos="zoom-in" class="edit-from">
+                    <!--Form-Title-->
+                    <h2 data-aos="zoom-in" class="form-title">Edit Movie</h2>
+                    <!--Heading-->
+                    <h3 data-aos="zoom-in"></h3>
+                    <!--Section (Form-body)-->
+                    <section data-aos="zoom-in" class="form-body">
+                        <!--Edit-Movie-Name Input-Field-->
+                        <input data-aos="zoom-in" type="text" placeholder="Name of movie" class="edit-movie-name">
+                        <!--Edit-Total-Collection Input-Field-->
+                        <input data-aos="zoom-in" type="text" placeholder="Total Collections" class="edit-total-collections">
+                    </section>
+                    <!--Error-Section-->
+                    <section data-aos="zoom-in"><p class="edit-form-error">Error :</p></section>
+                    <!--Pop-Up-Btn-Container-->
+                    <div data-aos="zoom-in" class="pop-up-btn-container">
+                        <!--Submit Button-->
+                        <button data-aos="zoom-in" class="edit-form-submit">Submit</button>
+                        <!--Cancel Button-->
+                        <button data-aos="zoom-in" class="edit-form-cancel">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </main><hr>
+        <!--Footer-Section-->
+        <footer data-aos="zoom-in-down">
+            Copyright <b>&copy;</b> <span> 2026 </span>by<u> Ahmar </u>Developer : All Rights reserved
+        </footer><hr>
+    </body>
+</html>
