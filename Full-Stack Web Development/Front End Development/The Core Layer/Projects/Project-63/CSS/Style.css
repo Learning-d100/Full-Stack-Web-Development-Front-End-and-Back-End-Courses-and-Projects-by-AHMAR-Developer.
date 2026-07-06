@@ -1,0 +1,134 @@
+/* Import Google Fonts - 'Montserrat' URL */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Reset and Base styles */
+/* body styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(165deg, rgb(134, 202, 212) 50%, rgb(55, 117, 117) 100%);
+}
+/* Header Styling */
+header {
+    margin: 30px 30px 30px 30px;
+    padding: 10px 10px 10px 10px;
+    backdrop-filter: blur(1000px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    /* Navigation Styling */
+    nav {
+        display: flex;
+        /* Motional image Styling */
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        /* Heading Styling */
+        h1 {
+            color: #fff;
+        }
+        /* Un-Ordered List Styling */
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            gap: 30px;
+            align-items: center;
+            margin-left: 800px;
+            font-size: 20px;
+            /* List Item Styling */
+            li {
+                /* Link Styling */
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    /* Hover Effect */
+                    &:hover {
+                        padding: 10px;
+                        background: #fff;
+                        border-radius: 50px;
+                        color: #000;
+                        transition: all 0.4s ease-in-out;
+                        box-shadow: 0 15px 30px white;
+                    }
+                }
+            }
+        }
+    }
+}
+/* Main Styling */
+main {
+    margin: 30px 30px 30px 30px;
+    padding: 50px 50px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(165deg, rgb(167, 234, 245) 50%, rgb(54, 141, 141) 100%);
+    backdrop-filter: blur(1500px);
+    /* Form Styling */
+    form {
+        margin: 50px 50px 50px 50px;
+        margin-left: 500px;
+        gap: 30px;
+        /* Heading Styling */
+        h1 {
+            margin-left: 100px;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+        /* Input Styling */
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            width: 25%;
+            margin-bottom: 30px;
+            background: transparent;
+            color: red;
+            /* Hover Effect */
+            &:hover {
+                background: #fff;
+                color: #000;
+                transition: all 0.3s ease-in-out;
+                padding: 11px;
+            }
+            /* placeholder styling */
+            &::placeholder {
+                color: red;
+            }
+        }
+        /* Label Styling */
+        label {
+            color: #947676;
+            margin-right: 50px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        /* Button Styling */
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(165deg, rgb(167, 234, 245) 50%, rgb(54, 141, 141) 100%);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-weight: 600;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            width: 50%;
+            /* Hover Styling */
+            &:hover {
+                background: #87d4f3;
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+                padding: 11px;
+            }
+        }
+    }
+}/* Footer Styling */
+footer {
+    margin: 30px 30px 30px 30px;
+    padding: 10px 10px 10px 10px;
+    backdrop-filter: blur(1000px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
