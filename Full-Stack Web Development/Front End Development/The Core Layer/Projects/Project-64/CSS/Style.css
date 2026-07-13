@@ -1,0 +1,138 @@
+/* Import Google Font - Poppins URL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Reset and Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling  */
+body {
+    background-color: #f1f1f1;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    background-color: white;
+    margin: 10px 10px 10px 10px;
+    flex-direction: row;
+    justify-content: center;
+
+    /* Motional Image Styling */
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Heading styling  */
+    h1 {
+        font-size: 40px;
+        margin-top: 20px;
+
+        /* Underline (u) styling */
+        u {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            color: red;
+        }
+    }
+}
+
+/* Section styling */
+section {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+
+    /* Calculator icon Styling */
+    i {
+        font-size: 25px;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+    /* Project-Name Styling */
+    h2 {
+        text-decoration: underline;
+    }
+}
+
+/* Main Styling */
+main {
+    background-color: aliceblue;
+    margin: 10px 10px 10px 10px;
+    padding: 50px 50px 50px 50px;
+}
+
+/* Calculator Styling */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    width: 500px;
+    height: 500px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Display Styling */
+#display {
+    width: 90%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons Styling */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+
+    /* Button styling */
+    button {
+        background-color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        padding: 20px 25px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+
+        /* Hover Styling */
+        &:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Active Styling */
+        &:active {
+            background-color: #ccc;
+        }
+
+        &:first-child {
+            background: #f04747;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+
+            /* Hover Styling */
+            &:hover {
+                background-color: #ff0000;
+            }
+        }
+    }
+}
+footer {
+    text-align-last: center;
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+}
