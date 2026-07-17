@@ -1,0 +1,376 @@
+:root {
+    /* DARK THEME (Default) */
+    --bg-desktop: #1c1c1e;
+    --calc-bg: #000000;
+    --text-main: #ffffff;
+    --text-muted: #8e8e93;
+    --btn-dark-bg: #333333;
+    --btn-dark-text: #ffffff;
+    --btn-light-bg: #a5a5a5;
+    --btn-light-text: #000000;
+    --btn-orange: #FF9F0A;
+
+    /* Dark Theme Glows & Overlays */
+    --glow-orange: rgba(255, 159, 10, 0.45);
+    --glow-dark: rgba(255, 255, 255, 0.1);
+    --glow-gray: rgba(165, 165, 165, 0.4);
+    --history-overlay: rgba(0, 0, 0, 0.75);
+    --history-border: rgba(255, 255, 255, 0.1);
+}
+
+body.light-mode {
+    /* LIGHT THEME */
+    --bg-desktop: #e5e5ea;
+    --calc-bg: #f2f2f7;
+    --text-main: #000000;
+    --text-muted: #8e8e93;
+    --btn-dark-bg: #ffffff;
+    --btn-dark-text: #000000;
+    --btn-light-bg: #d1d1d6;
+    --btn-light-text: #000000;
+
+    /* Light Theme Shadows & Overlays */
+    --glow-dark: rgba(0, 0, 0, 0.08);
+    --glow-gray: rgba(0, 0, 0, 0.1);
+    --history-overlay: rgba(255, 255, 255, 0.85);
+    --history-border: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--bg-desktop);
+    transition: background-color 0.4s ease;
+}
+
+.calculator {
+    background-color: var(--calc-bg);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* For history panel slide */
+    transition: background-color 0.4s ease, border 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* TOP BAR (Tools) */
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    z-index: 10;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.icon-btn:hover {
+    background-color: var(--glow-dark);
+    color: var(--text-main);
+}
+
+.icon-btn:active {
+    transform: scale(0.85);
+}
+
+.icon-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+/* DISPLAY AREA */
+.display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px 24px 10px 24px;
+    /* Extra top padding for top-bar */
+    height: 32vh;
+    min-height: 160px;
+}
+
+.expression {
+    color: var(--text-muted);
+    font-size: clamp(20px, 6vw, 24px);
+    font-weight: 400;
+    text-align: right;
+    min-height: 32px;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.display {
+    color: var(--text-main);
+    font-size: 95px;
+    font-weight: 200;
+    text-align: right;
+    letter-spacing: -2px;
+    line-height: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: font-size 0.15s cubic-bezier(0.25, 1, 0.5, 1), color 0.4s ease;
+}
+
+/* BUTTON GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    padding: 0 18px 32px 18px;
+}
+
+.calc-btn {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+
+    transition:
+        transform 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.15s ease;
+    will-change: transform, box-shadow;
+}
+
+/* DESKTOP HOVER GLOWS */
+@media (hover: hover) {
+    .btn-dark:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px var(--glow-dark);
+        filter: brightness(1.15);
+        /* Universal lighten */
+    }
+
+    .btn-gray:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px var(--glow-gray);
+        filter: brightness(1.1);
+    }
+
+    .btn-orange:hover {
+        transform: scale(1.05);
+        background-color: #ffb340;
+        box-shadow: 0 6px 24px var(--glow-orange);
+    }
+}
+
+/* SPRING CLICK COMPRESSION */
+.calc-btn:active {
+    transform: scale(0.92) !important;
+    transition: transform 0.05s linear;
+}
+
+.btn-orange:active {
+    background-color: #ffffff !important;
+    color: var(--btn-orange);
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Button Dynamic Colors */
+.btn-gray {
+    background-color: var(--btn-light-bg);
+    color: var(--btn-light-text);
+    font-size: 26px;
+}
+
+.btn-dark {
+    background-color: var(--btn-dark-bg);
+    color: var(--btn-dark-text);
+}
+
+.active-operator {
+    background: #fff !important;
+    color: var(--btn-orange) !important;
+    box-shadow: 0 0 15px rgba(255, 159, 10, .6)
+}
+
+.btn-orange {
+    background-color: var(--btn-orange);
+    color: #ffffff;
+    font-size: 38px;
+}
+
+.zero {
+    grid-column: span 2;
+    aspect-ratio: auto;
+    border-radius: 100px;
+    justify-content: flex-start;
+    padding-left: clamp(28px, 8vw, 36px);
+}
+
+/* HISTORY PANEL (Glassmorphism) */
+.history-panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: var(--history-overlay);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid var(--history-border);
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.4s;
+    z-index: 20;
+}
+
+.history-panel.open {
+    transform: translateY(0);
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--history-border);
+}
+
+.history-title {
+    color: var(--text-main);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.close-history,
+.clear-history {
+    background: none;
+    border: none;
+    color: var(--btn-orange);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.clear-history {
+    color: #ff3b30;
+    /* iOS Red */
+}
+
+.history-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 24px 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.history-item {
+    color: var(--text-main);
+    font-size: 22px;
+    text-align: right;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--history-border);
+    opacity: 0.8;
+    animation: fadeIn 0.3s ease;
+}
+
+.history-empty {
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+       DESKTOP WIDGET VIEW
+       ========================================= */
+@media (min-width: 480px) {
+    .calculator {
+        max-width: 360px;
+        border-radius: 40px;
+        box-shadow: 0px 30px 70px rgba(0, 0, 0, 0.3);
+        height: auto;
+        border: 1px solid var(--history-border);
+    }
+
+    .history-panel {
+        border-radius: 30px 30px 40px 40px;
+    }
+
+    .display-container {
+        height: auto;
+    }
+
+    .display {
+        font-size: 78px;
+    }
+
+    .buttons {
+        gap: 12px;
+        padding: 0 16px 24px 16px;
+    }
+
+    .zero {
+        padding-left: 32px;
+    }
+}
+
+/* =========================================
+       MOBILE FULL-SCREEN VIEW
+       ========================================= */
+@media (max-width: 479px) {
+    body {
+        background-color: var(--calc-bg);
+    }
+
+    .calculator {
+        height: 100dvh;
+        justify-content: flex-end;
+    }
+
+    .display {
+        font-size: clamp(65px, 20vw, 95px);
+    }
+}

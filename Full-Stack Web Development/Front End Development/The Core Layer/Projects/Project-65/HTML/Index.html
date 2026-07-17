@@ -1,0 +1,114 @@
+<!--
+        Projects-65:-
+                Premium iOS Calculator - Pro Features
+--><!--Start-Coding-->
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head>  
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Favicon-->
+        <link rel="icon" type="images/png" href="../FAVICONS/wired-gradient-1383-sphere-loop-rotate.png">
+        <!--Font Awesome Link-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Animate-on-scroll CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+        <!--Google fonts poppins-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap Icons link--> 
+        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--Google icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!--Javascript other link-->
+        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
+        <!-- Animate-on-scroll Javascript-- -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <!--Link Javascript-->
+        <script defer src="../JAVASCRIPT/Script.js"></script>
+        <!--Link CSS-->
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <title>
+            Premium iOS Calculator - Pro Features
+        </title>   
+    </head>
+    <body>
+        <!--Calculator-->
+        <div class="calculator">
+            <!--Top-Tools-Bar-->
+            <div class="top-bar">
+                <!--Button (History)-->
+                <button class="icon-btn" onclick="toggleHistory()" title="History">
+                    <!--Clock-Icon (SVG)-->
+                    <svg viewBox="0 0 24 24">
+                        <!--Path-->
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path>
+                    </svg>
+                </button>
+                <!--Theme-Button-->
+                <button class="icon-btn" onclick="toggleTheme()" title="Toggle Theme" id="themeIcon">
+                    <!--Sun-icon (SVG) (Default to show toggle to Light Icon)-->
+                    <svg viewBox="0 0 24 24">
+                        <!--Path-->
+                        <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41.39.39 1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41.39.39 1.03.39 1.41 0l1.06-1.06z"></path>
+                    </svg>
+                </button>
+            </div>
+            <!--Display-Container-->
+            <div class="display-container">
+                <!--Expression-->
+                <div class="expression" id="expression"></div>
+                <!--Display-->
+                <div class="display" id="display">0</div>
+            </div>
+            <!--Calculator Buttons-->
+            <div class="buttons">
+                <button class="calc-btn btn-gray" onclick="handleAction('clear')" id="clearBtn">AC</button>
+                <button class="calc-btn btn-gray" onclick="handleAction('sign')">+/-</button>
+                <button class="calc-btn btn-gray" onclick="handleAction('percent')">%</button>
+                <button class="calc-btn btn-orange" onclick="handleOperator('/', this)">÷</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('7')">7</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('8')">8</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('9')">9</button>
+                <button class="calc-btn btn-orange" onclick="handleOperator('*', this)">×</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('4')">4</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('5')">5</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('6')">6</button>
+                <button class="calc-btn btn-orange" onclick="handleOperator('-', this)">-</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('1')">1</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('2')">2</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('3')">3</button>
+                <button class="calc-btn btn-orange" onclick="handleOperator('+', this)">+</button>
+                <button class="calc-btn btn-dark zero" onclick="handleNumber('0')">0</button>
+                <button class="calc-btn btn-dark" onclick="handleNumber('.')">.</button>
+                <button class="calc-btn btn-orange" onclick="calculate()">=</button>
+            </div>
+            <!--History Panel Overlay-->
+            <div class="history-panel" id="historyPanel">
+                <!--History-Reader-->
+                <div class="history-header">
+                    <!--Close History Button-->
+                    <button class="close-history" onclick="toggleHistory()">Close</button>
+                    <!--History Title-->
+                    <span class="history-title">History</span>
+                    <!--Clear History Button-->
+                    <button class="clear-history" onclick="clearHistory()">Clear</button>
+                </div>
+                <!--History-List-->
+                <div class="history-list" id="historyList">
+                    <!--Empty History-->
+                    <div class="history-empty">No History Yet</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
