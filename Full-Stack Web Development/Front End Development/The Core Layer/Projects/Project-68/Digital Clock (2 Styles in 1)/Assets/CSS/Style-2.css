@@ -1,0 +1,275 @@
+@import url("https://fonts.maateen.me/baloo-da-2/font.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  color: var(--text-color);
+  font-family: "Baloo Da 2", Arial, Helvetica, sans-serif;
+  background-color: var(--base-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+  padding: 0px;
+  margin: 0px;
+  transition: ease-in-out 0.2s;
+  cursor: default;
+}
+
+:root {
+  --base-color: #fdfafa;
+  --base-variant: #e8e9ed;
+  --primary-color: #3a435d;
+  --text-color: #fafafa;
+  --time-bg: #7395fd;
+  --info-color: #0f95ca;
+  --st2-color: #141313;
+}
+
+.darkmode {
+  --base-color: #1d1d1d;
+  --primary-color: #a8bdfd;
+  --text-color: #ffffff;
+  --time-bg: #3a435d;
+  --base-variant: #101425;
+  --info-color: #2eb5eb;
+  --st2-color: #e8e9ed;
+  transition: ease-in-out 0.2s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Baloo Da 2", sans-serif;
+  font-size: 4em;
+}
+
+.watch-container {
+  background: var(--time-bg);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: #000 1px 0px 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 750px;
+}
+
+.time-container {
+  font-size: 1.5em;
+  font-weight: 550;
+  width: 90vw;
+  max-width: 730px;
+  padding: 10px;
+}
+
+.date-container {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  animation: transition 0.3s ease-in-out;
+}
+
+@keyframes transition {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#theme-switch svg {
+  fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
+
+#fullscreen-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  animation: transition 0.3s ease-in-out;
+}
+
+#style2-btn {
+  width: 70px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  animation: transition 0.3s ease-in-out;
+  color: var(--st2-color);
+  font-weight: 500;
+  font-family: "Baloo Da 2", sans-serif;
+}
+
+#fullscreen-btn svg {
+  fill: var(--primary-color);
+}
+@keyframes transition {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#fullscreen-btn svg {
+  fill: var(--primary-color);
+}
+
+.info {
+  font-size: 22px;
+  color: var(--info-color);
+  font-family: "Baloo Da 2", Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.info a {
+  color: #e76f51;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Mobile*/
+
+@media screen and (min-width: 0px) and (max-width: 484px) {
+  .time-container {
+    font-size: 2.7rem;
+    width: 75vw;
+    font-weight: 500;
+  }
+
+  .date-container {
+    font-size: 1.7rem;
+    width: 75vw;
+    font-weight: 400;
+  }
+
+  .container {
+    width: 83vw;
+    max-width: 750px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .info {
+    font-size: 15px;
+  }
+}
+
+/*Mobile-big*/
+
+@media screen and (min-width: 484px) and (max-width: 600px) {
+  .time-container {
+    font-size: 3.5rem;
+    width: 75vw;
+    font-weight: 450;
+  }
+
+  .date-container {
+    font-size: 2rem;
+    width: 75vw;
+    font-weight: 400;
+  }
+
+  .container {
+    width: 87vw;
+    max-width: 750px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .info {
+    font-size: 17px;
+  }
+}
+/*Tablet*/
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .time-container {
+    font-size: 4rem;
+    width: 75vw;
+    font-weight: 500;
+  }
+
+  .date-container {
+    font-size: 2.5rem;
+    width: 75vw;
+    font-weight: 400;
+  }
+
+  .container {
+    width: 84vw;
+    max-width: 750px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .info {
+    font-size: 18px;
+  }
+}
