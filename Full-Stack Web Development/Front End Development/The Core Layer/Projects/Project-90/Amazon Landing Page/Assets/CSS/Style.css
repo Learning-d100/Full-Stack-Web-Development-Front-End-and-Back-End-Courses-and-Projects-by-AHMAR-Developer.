@@ -1,0 +1,444 @@
+/* Import Google Font - 'Poppins' URL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* HTML, Body Styling */
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+/* Navigation Styling */
+nav {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* Navigation Logo Styling */
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4.95vh;
+        width: 5.21vw;
+        border: 1.5px solid transparent;
+        /* Hover Effect Styling */
+        &:hover {
+            border: 1.5px solid rgba(255, 255, 255, 0.366);
+            border-radius: 3px;
+        }
+        /* Amazon Logo Image Styling */
+        img {
+            object-fit: contain;
+            height: 100%;
+            width: 100%;
+            /* Hover Effect Styling */
+            &:hover {
+                transform: scale(1.2);
+                transition: all 0.5s ease-in;
+            }
+        }
+    }
+    /* Navigation Address Styling */
+    .address {
+        margin-top: -25px;
+        height: 3vh;
+        width: 7vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        /* Hover Effect Styling */
+        &:hover {
+            border: 1.5px solid rgba(255, 255, 255, 0.366);
+            border-radius: 3px;
+        }
+        /* Delivery Address */
+        p {
+            color: #cccccc;
+            font-size: 1rem;
+            margin-left: 15px;
+            /* Hover Effect Styling */
+            &:hover {
+                color: #fff;
+            }
+        }
+        /* Add Icon (Navigation) Styling */
+        .add-icon {
+            display: flex;
+            align-items: center;
+            /* Location Styling */
+            p {
+                font-size: 1.2rem;
+                margin-left: 3px;
+                /* Hover Effect Styling */
+                &:hover {
+                    color: #ffffff;
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+    /* Search Bar (Navigation) Styling */
+    .search {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: peachpuff;
+        width: 650px;
+        height: 40px;
+        border-radius: 4px;
+        /* Hover Effect Styling */
+        &:hover {
+            border: 2px solid orange;
+        }
+        /* Search Bar Select Styling */
+        select {
+            background-color: #f3f3f3;
+            width: 50px;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: none;
+            /* Hover Effect Styling */
+            &:hover {
+                color: orange;
+                background-color: #fff;
+                border-right: 2.5px solid orange;
+            }
+        }
+        /* Search Bar Input Styling */
+        input {
+            width: 100%;
+            font-size: 1rem;
+            border: none;
+            text-align: center;
+        }
+        /* Search Icon (Navigation) Styling */
+        .search-icon {
+            width: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            background-color: rgba(255, 166, 0, 0.57);
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            color: #0f1111;
+            /* Hover Effect Styling */
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    /* SignIn (Navigation) Styling */
+    .sign-in {
+        border: 1.5px solid transparent;
+        /* Hover Effect Styling */
+        &:hover {
+            border: 1.5px solid rgba(255, 255, 255, 0.366);
+            border-radius: 3px;
+            transform: scale(1.1);
+            transition: all 0.5s ease-in;
+            color: orange;
+        }
+        /* Active Effect Styling */
+        &:active {
+            color: green;
+            transition: 0s;
+        }
+        /* SignIn Text Styling */
+        p {
+            /* Span Styling */
+            span {
+                font-size: 0.75rem;
+            }
+            /* Child 2 Styling */
+            &:nth-child(2) {
+                font-size: 0.85rem;
+                font-weight: 700;
+            }
+        }
+    }
+    /* Return (Navigation) Styling */
+    .return {
+        border: 1.5px solid transparent;
+        /* Hover Effect Styling */
+        &:hover {
+            border: 1.5px solid rgba(255, 255, 255, 0.366);
+            border-radius: 3px;
+            transform: scale(1.1);
+            transition: all 0.5s ease-in;
+            color: orange;
+        }
+        /* Active Effect Styling */
+        &:active {
+            color: green;
+            transition: 0s;
+        }
+        /* Return Text Styling */
+        p {
+            /* Span Styling */
+            span {
+                font-size: 0.75rem;
+            }
+            /* Child 2 Styling */
+            &:nth-child(2) {
+                font-size: 0.85rem;
+                font-weight: 700;
+            }
+        }
+    }
+    /* Cart (Navigation) Styling */
+    .cart {
+        font-size: 0.85rem;
+        font-weight: 700;
+        border: 1.5px solid transparent;
+        /* Hover Effect Styling */
+        &:hover {
+            border: 1.5px solid rgba(255, 255, 255, 0.366);
+            border-radius: 3px;
+            color: orange;
+            transform: scale(1.1);
+            transition: all 0.5s ease-in;
+        }
+        /* Icon Styling */
+        i {
+            font-size: 30px;
+        }
+    }
+}
+
+/* Panel Styling */
+.panel {
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Panel Icon Styling */
+.panel-icon {
+    display: flex;
+    margin-right: 5px;
+    /* Icon Styling */
+    i {
+        margin-top: 5px;
+        font-size: large;
+    }
+    /* Description Styling */
+    p {
+        font-size: 20px;
+        margin-left: 15px;
+        color: orange;
+    }
+}
+/* Panel Options Styling */
+.panel-options {
+    font-size: 0.85rem;
+    width: 70%;
+    /* Description Styling */
+    p {
+        margin-left: 15px;
+        display: inline;
+        color: #fff;
+        /* Hover Effect Styling */
+        &:hover {
+            border-bottom: 2px solid orange;
+            color: orange;
+            transform: scale(1.1);
+            transition: all 0.5s ease-in;
+        }
+    }
+}
+/* Panel Deals Styling */
+.panel-deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+    /* Hover Effect Styling */
+    &:hover {
+        text-decoration: underline;
+    }
+}
+/* Hero Section Styling */
+.hero-section {
+    height: 380px;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    /* Image Styling */
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    /* Hero Message Styling */
+    .hero-message {
+        background-color: white;
+        color: black;
+        height: 40px;
+        width: 80%;
+        position: absolute;
+        bottom: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.85rem;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        /* Link Styling */
+        a {
+            margin-left: 5px;
+            color: #007185;
+            /* Hover Effect Styling */
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/* Shop Section Styling */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    /* Box Styling */
+    .box {
+        height: 400px;
+        width: 23%;
+        background-color: white;
+        padding: 20px 0px 15px;
+        margin-top: 15px;
+        /* Hover Effect Styling */
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.5s ease-in;
+            border: 2px solid orange;
+        }
+        /* Box Content Styling */
+        .box-content {
+            margin-left: 1rem;
+            margin-right: 1rem;
+            /* Heading Styling */
+            h2 {
+                font-size: 1rem;
+                font-weight: 700;
+                height: 55px;
+            }
+            /* Box Image Styling */
+            .box-image {
+                /* Box Image Styling */
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: contain;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    /* Hover Effect Styling */
+                    &:hover {
+                        transform: scale(1.05);
+                        transition: all 0.5s ease-in;
+                    }
+                }
+            }
+            /* Description Styling */
+            p {
+                font-size: 0.85rem;
+                color: #007185;
+                /* Hover Effect Styling */
+                &:hover {
+                    border-bottom: 2px solid orange;
+                    transform: scale(1.05);
+                    transition: all 0.5s ease-in;
+                }
+                /* Active Effect Styling */
+                &:active {
+                    border-bottom: 2px solid green;
+                    color: green;
+                    transition: 0s;
+                }
+            }
+        }
+    }
+}
+/* Footer */
+footer {
+    margin-top: 15px;
+    /* Foot Panel 1 Styling */
+    .foot-panel-1 {
+        background-color: #37475a;
+        color: white;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.85rem;
+    }
+    /* Foot Panel 2 Styling */
+    .foot-panel-2 {
+        background-color: #222f32;
+        color: white;
+        height: 300px;
+        display: flex;
+        justify-content: space-evenly;
+        /* Lists Styling */
+        ul {
+            margin-top: 20px;
+            /* Links Styling */
+            a {
+                display: block;
+                font-size: 0.85rem;
+                margin-top: 10px;
+                color: #dddddd;
+                /* Hover Effect Styling */
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    /* Foot Panel 3 Styling */
+    .foot-panel-3 {
+        height: 70px;
+        background-color: #222f32;
+        color: white;
+        border-top: 0.5px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Foot Panel 3 Logo Styling */
+        .foot-panel-3-logo {
+            height: 50px;
+            width: 100px;
+            background-size: cover;
+            background-image: url(../Images/amazon_logo.png);
+        }
+    }
+    /* Foot Panel 4 Styling */
+    .foot-panel-4 {
+        background-color: #0f1111;
+        color: white;
+        height: 80px;
+        font-size: 0.7rem;
+        text-align: center;
+        /* Pages Styling */
+        .pages {
+            padding-top: 25px;
+        }
+        /* Copyright Styling */
+        .copyright {
+            padding-top: 5px;
+        }
+    }
+}
