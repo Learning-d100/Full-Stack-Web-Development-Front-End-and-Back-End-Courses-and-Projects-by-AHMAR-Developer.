@@ -1,0 +1,66 @@
+/* Google Fonts - 'Poppins' URL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* Body Styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffffff;
+    background-color: #212121;
+}
+/* Un Ordered List Styling */
+ul {
+    position: relative;
+    transform: skewY(-15deg);
+}
+/* List Item Styling */
+ul li {
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background: #3e3f46;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+/* List Item Hover */
+ul li:hover {
+    background: #33a3ee;
+    transform: translateX(-30px);
+    font-weight: 600;
+}
+/* List Item Link Styling */
+ul li a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    /* Hover Effect */
+    &:hover {
+        transform: translateX(5px);
+        font-size: 1.1em;
+    }
+}
+ul li a:hover {
+    color: rgb(34, 255, 0);
+}
+/* List Item Link Hover */
+ul li:hover a:nth-child(1) {
+    color: rgb(255, 0, 0);
+    &:hover {
+        color: rgb(34, 255, 0);
+    }
+}
+a:nth-child(1) {
+    color: #fff;
+}

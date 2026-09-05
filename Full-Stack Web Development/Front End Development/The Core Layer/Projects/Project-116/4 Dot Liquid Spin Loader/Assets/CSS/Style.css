@@ -1,0 +1,23 @@
+/* Write CSS for 4 dot liquid Spin loader */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid #000;
+    border-color: #000 transparent #000 transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  } 
