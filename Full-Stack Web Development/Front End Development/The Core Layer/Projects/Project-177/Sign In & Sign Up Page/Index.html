@@ -1,55 +1,162 @@
-<!--
-        TODO: Projects-177:-
-                        * FIXME: Sign In & Sign Up Page
---><!--Start-Coding-->
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head>  
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1.0, user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!--Favicon-->
-        <link rel="icon" type="images/png" href="Assets/Favicons/wired-gradient-1383-sphere-loop-rotate.png">
-        <!--Font Awesome Link-->
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <!-- Animate-on-scroll CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-        <!--Google fonts poppins-->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <!--Bootstrap Icons link--> 
-        <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
-        <lin rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!--Google icons-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <!-- Condiment font -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Condiment&display=swap" rel="stylesheet">
-        <!--Javascript other link-->
-        <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-scrollspy/2.4.0/simple-scrollspy.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-                integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- Include Ionicons library -->
-        <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
-        <!-- Animate-on-scroll Javascript-- -->
-        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-        <!--Link Javascript-->
-        <script defer src="Assets/JAVASCRIPT/Script.js"></script>
-        <!--Link CSS-->
-        <link rel="stylesheet" href="Assets/CSS/Style.css">
-        <title>
-            Sign In & Sign Up Page
-        </title>   
-    </head>
-    <body>
-        
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Platform Login & Signup | Modern Authentication</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/Style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background Decorative Elements -->
+        <div class="bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <!-- Forms Container -->
+        <div class="forms-container">
+            <div class="form-control signin-form">
+                <form action="#">
+                    <h2>Welcome Back!</h2>
+                    <p class="subtitle">Login to connect with your community</p>
+
+                    <!-- Social Login Buttons -->
+                    <div class="social-login">
+                        <button type="button" class="social-btn google-btn">
+                            <i class="fab fa-google"></i>
+                            <span>Continue with Google</span>
+                        </button>
+                        <button type="button" class="social-btn facebook-btn">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Continue with Facebook</span>
+                        </button>
+                        <button type="button" class="social-btn github-btn">
+                            <i class="fab fa-github"></i>
+                            <span>Continue with GitHub</span>
+                        </button>
+                    </div>
+
+                    <div class="divider">
+                        <span>Or login with email</span>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+
+                    <!-- Password Input with Show/Hide Toggle -->
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" class="password-input" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+
+                    <!-- Remember Me & Forgot Password -->
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">Login</button>
+                </form>
+            </div>
+
+            <div class="form-control signup-form">
+                <form action="#">
+                    <h2>Join Our Community!</h2>
+                    <p class="subtitle">Create an account to get started</p>
+
+                    <!-- Social Signup Buttons -->
+                    <div class="social-login">
+                        <button type="button" class="social-btn google-btn">
+                            <i class="fab fa-google"></i>
+                            <span>Sign up with Google</span>
+                        </button>
+                        <button type="button" class="social-btn facebook-btn">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Sign up with Facebook</span>
+                        </button>
+                        <button type="button" class="social-btn github-btn">
+                            <i class="fab fa-github"></i>
+                            <span>Sign up with GitHub</span>
+                        </button>
+                    </div>
+
+                    <div class="divider">
+                        <span>Or sign up with email</span>
+                    </div>
+
+                    <!-- Username Input -->
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+
+                    <!-- Password Input with Show/Hide Toggle -->
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" class="password-input" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+
+                    <!-- Confirm Password Input with Show/Hide Toggle -->
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm Password" class="password-input" required>
+                        <i class="fas fa-eye toggle-password"></i>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <label class="terms-checkbox">
+                        <input type="checkbox" required>
+                        <span>I agree to the <a href="#" class="terms-link">Terms & Conditions</a></span>
+                    </label>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Side Panel with Info -->
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <i class="fas fa-user-check icon-large"></i>
+                    <h3>Already a Member?</h3>
+                    <p>Welcome back! Login to access your account and stay connected with your community.</p>
+                    <button class="btn-transparent" id="login-btn">Login</button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <i class="fas fa-users-between-lines icon-large"></i>
+                    <h3>New Here?</h3>
+                    <p>Join our amazing community and connect with people who share your interests!</p>
+                    <button class="btn-transparent" id="signup-btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Assets/JAVASCRIPT/Script.js"></script>
+</body>
 </html>
