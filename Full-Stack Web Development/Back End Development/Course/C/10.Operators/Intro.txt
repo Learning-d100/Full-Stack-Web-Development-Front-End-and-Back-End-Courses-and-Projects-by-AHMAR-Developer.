@@ -1,0 +1,34 @@
+Operators:-
+
+    Operators are symbols that are used to perform operations on variables and values.
+    Operators are used to assign values to variables, add, subtract, multiply, divide and many more.
+
+    Types of Operators:-
+        Arithmetic Operators
+        Assignment Operators
+        Comparison Operators
+        Logical Operators
+        Bitwise Operators
+        Ternary Operators
+        Other Operators
+
+    Arithmetic Operators:-
+        +, -, *, /, %, ++, --
+
+    Assignment Operators:-
+        =, +=, -=, *=, /=, %=
+
+    Comparison Operators:-
+        ==, !=, >, <, >=, <=
+
+    Logical Operators:-
+        &&, ||, !
+
+    Bitwise Operators:-
+        &, |, ^, ~, <<, >>
+
+    Ternary Operators:-
+        ?: (conditional operator)
+
+    Other Operators:-
+        sizeof, typeof

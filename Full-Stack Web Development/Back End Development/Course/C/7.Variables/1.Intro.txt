@@ -1,0 +1,9 @@
+What is a Variable ?
+    A variable is a named container that can hold different types of data, such as numbers, strings, or even other variables.
+    Variables are containers for storing data values, like numbers and characters.
+    You can think of a variable as a named box where you keep a value that can be used later.
+ In C, variables must have a specific type, which tells the program what kind of data the variable can store.
+ 1. Integer ( int ) - stores whole numbers, without decimals, such as 123 or -123.
+ 2. Floating-point number ( float ) - stores numbers with decimals, such as 19.99 or -19.99.
+ 3. Character ( char ) - stores single characters, such as 'a' or 'A'.
+ 4. String ( char array ) - stores text, such as "Hello".

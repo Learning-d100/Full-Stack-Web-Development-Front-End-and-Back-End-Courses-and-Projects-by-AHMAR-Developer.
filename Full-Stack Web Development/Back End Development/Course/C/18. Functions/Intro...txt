@@ -1,0 +1,9 @@
+Functions:-
+
+    Functions are blocks of code that perform a specific task and can be reused in your program.
+
+    Functions can take input parameters and return a value.
+
+    Functions are often used to break down complex tasks into smaller, more manageable parts.
+
+    Functions are a powerful tool for organizing your code and making it more readable and maintainable.
